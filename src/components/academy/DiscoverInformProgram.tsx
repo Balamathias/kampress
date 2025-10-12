@@ -71,7 +71,7 @@ const DiscoverInformProgram = () => {
           >
             {/* Decorative corner accents */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-bl-full" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-orange-500/10 to-yellow-500/10 rounded-tr-full" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-yellow-500/10 to-yellow-500/10 rounded-tr-full" />
 
             {/* Icon */}
             <motion.div
@@ -94,9 +94,9 @@ const DiscoverInformProgram = () => {
             >
               Discover and Inform program of{" "}
               <span className="font-bold text-blue-900">Kampress Academy</span> is a{" "}
-              <span className="font-semibold text-orange-600">combination of in-person and virtual boot camp experience</span>,
+              <span className="font-semibold text-yellow-600">combination of in-person and virtual boot camp experience</span>,
               designed to help prospective college students for{" "}
-              <span className="font-semibold text-orange-600">undergraduate courses</span> to get ready to face the world.
+              <span className="font-semibold text-yellow-600">undergraduate courses</span> to get ready to face the world.
             </motion.p>
           </motion.div>
 
@@ -119,7 +119,7 @@ const DiscoverInformProgram = () => {
                 icon: Laptop,
                 title: "Practical Training",
                 description: "Real-world skills and knowledge application",
-                gradient: "from-orange-500 to-orange-600",
+                gradient: "from-yellow-500 to-yellow-600",
               },
             ].map((feature, index) => (
               <motion.div

@@ -3,12 +3,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { countries } from "./career-counseling/CounselingFormSection";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isStudyWorkOpen, setIsStudyWorkOpen] = useState(false);
@@ -34,6 +36,13 @@ const Navbar = () => {
     { name: "Kampress Academy", href: "/academy" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <motion.nav
@@ -82,14 +91,25 @@ const Navbar = () => {
                   <>
                     <Link
                       href={link.href}
-                      className={`flex items-center px-3 py-2 text-sm xl:text-base font-medium transition-colors duration-200 ${
-                        isScrolled
-                          ? "text-gray-700 hover:text-orange-600"
-                          : "text-white hover:text-orange-300"
+                      className={`relative flex items-center px-3 py-2 text-sm xl:text-base font-medium transition-colors duration-200 ${
+                        isActive(link.href)
+                          ? isScrolled
+                            ? "text-orange-600 font-semibold"
+                            : "text-yellow-300 font-semibold"
+                          : isScrolled
+                          ? "text-gray-700 hover:text-yellow-600"
+                          : "text-white hover:text-yellow-300"
                       }`}
                     >
                       {link.name}
                       <ChevronDown className="ml-1 w-4 h-4" />
+                      {isActive(link.href) && (
+                        <motion.div
+                          layoutId="activeLink"
+                          className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full"
+                          transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                        />
+                      )}
                     </Link>
                     <AnimatePresence>
                       {isStudyWorkOpen && (
@@ -103,7 +123,7 @@ const Navbar = () => {
                             <Link
                               key={country.name}
                               href={country.href}
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-yellow-600 hover:bg-yellow-50 rounded-lg transition-colors"
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
                               {country.name}
@@ -116,13 +136,24 @@ const Navbar = () => {
                 ) : (
                   <Link
                     href={link.href}
-                    className={`px-3 py-2 text-sm xl:text-base font-medium transition-colors duration-200 ${
-                      isScrolled
-                        ? "text-gray-700 hover:text-orange-600"
-                        : "text-white hover:text-orange-300"
+                    className={`relative px-3 py-2 text-sm xl:text-base font-medium transition-colors duration-200 ${
+                      isActive(link.href)
+                        ? isScrolled
+                          ? "text-orange-600 font-semibold"
+                          : "text-yellow-300 font-semibold"
+                        : isScrolled
+                        ? "text-gray-700 hover:text-yellow-600"
+                        : "text-white hover:text-yellow-300"
                     }`}
                   >
                     {link.name}
+                    {isActive(link.href) && (
+                      <motion.div
+                        layoutId="activeLink"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full"
+                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      />
+                    )}
                   </Link>
                 )}
               </motion.div>
@@ -134,7 +165,7 @@ const Navbar = () => {
               transition={{ delay: 0.6 }}
             >
               <Button
-                className="ml-4 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="ml-4 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Get Started
               </Button>
@@ -179,7 +210,11 @@ const Navbar = () => {
                       <Link
                         href={link.href}
                         onClick={() => setIsStudyWorkOpen(!isStudyWorkOpen)}
-                        className="flex items-center justify-between w-full px-4 py-3 text-base font-medium text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-lg transition-colors"
+                        className={`flex items-center justify-between w-full px-4 py-3 text-base font-medium rounded-lg transition-colors ${
+                          isActive(link.href)
+                            ? "bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold"
+                            : "text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                        }`}
                       >
                         {link.name}
                         <ChevronDown
@@ -202,7 +237,7 @@ const Navbar = () => {
                                 <Link
                                   key={country.name}
                                   href={country.href}
-                                  className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
+                                  className="block px-4 py-2 text-sm text-gray-600 hover:text-yellow-600 hover:bg-yellow-50 rounded-lg transition-colors"
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                   {country.name}
@@ -216,7 +251,11 @@ const Navbar = () => {
                   ) : (
                     <Link
                       href={link.href}
-                      className="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-lg transition-colors"
+                      className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
+                        isActive(link.href)
+                          ? "bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold"
+                          : "text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                      }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {link.name}
@@ -231,7 +270,7 @@ const Navbar = () => {
                 className="pt-4"
               >
                 <Button
-                  className="w-full rounded-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-3 shadow-lg"
+                  className="w-full rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white py-3 shadow-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Get Started

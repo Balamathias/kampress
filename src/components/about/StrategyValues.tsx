@@ -18,7 +18,7 @@ const StrategyValues = () => {
     {
       icon: Zap,
       title: "Exceedingly domestic with attention to details",
-      gradient: "from-yellow-500 to-orange-500",
+      gradient: "from-yellow-500 to-yellow-500",
     },
     {
       icon: Shield,
@@ -28,7 +28,7 @@ const StrategyValues = () => {
   ];
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-yellow-50/30 via-amber-50/50 to-orange-100/50 overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-yellow-50/30 via-amber-50/50 to-yellow-100/50 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -46,7 +46,7 @@ const StrategyValues = () => {
           opacity: [0.2, 0.3, 0.2],
         }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-amber-400/30 to-orange-400/30 rounded-full blur-3xl"
+        className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-amber-400/30 to-yellow-400/30 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -54,7 +54,7 @@ const StrategyValues = () => {
           opacity: [0.2, 0.3, 0.2],
         }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-        className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-tl from-yellow-400/30 to-orange-400/30 rounded-full blur-3xl"
+        className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-tl from-yellow-400/30 to-yellow-400/30 rounded-full blur-3xl"
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -72,10 +72,10 @@ const StrategyValues = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-100 to-orange-100 rounded-full border border-orange-300 mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-100 to-yellow-100 rounded-full border border-yellow-300 mb-6"
             >
-              <Heart className="w-4 h-4 text-orange-600" />
-              <span className="text-sm font-semibold text-orange-700">Our Values</span>
+              <Heart className="w-4 h-4 text-yellow-600" />
+              <span className="text-sm font-semibold text-yellow-700">Our Values</span>
             </motion.div>
 
             <motion.h2
@@ -85,7 +85,7 @@ const StrategyValues = () => {
               transition={{ delay: 0.3 }}
               className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4"
             >
-              <span className="bg-gradient-to-r from-orange-700 via-amber-700 to-yellow-700 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-700 via-amber-700 to-yellow-700 bg-clip-text text-transparent">
                 Core and shared Values
               </span>
             </motion.h2>
@@ -170,12 +170,12 @@ const StrategyValues = () => {
             transition={{ delay: 1 }}
             className="mt-12 text-center"
           >
-            <div className="inline-flex items-center gap-3 px-6 py-4 bg-white rounded-2xl shadow-lg border border-orange-200">
+            <div className="inline-flex items-center gap-3 px-6 py-4 bg-white rounded-2xl shadow-lg border border-yellow-200">
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
               >
-                <Star className="w-6 h-6 text-orange-500" fill="currentColor" />
+                <Star className="w-6 h-6 text-yellow-500" fill="currentColor" />
               </motion.div>
               <p className="text-gray-700 font-semibold">
                 Committed to Excellence Since 2012

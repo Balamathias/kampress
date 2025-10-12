@@ -21,10 +21,10 @@ const AcademyFormSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 backdrop-blur-sm rounded-full border border-orange-400/30 mb-4"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-400/30 mb-4"
               >
-                <GraduationCap className="w-4 h-4 text-orange-400" />
-                <span className="text-sm font-semibold text-orange-300">Get Started</span>
+                <GraduationCap className="w-4 h-4 text-yellow-400" />
+                <span className="text-sm font-semibold text-yellow-300">Get Started</span>
               </motion.div>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">

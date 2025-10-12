@@ -96,14 +96,14 @@ const OverviewSection = () => {
 
               <p>
                 You can check{" "}
-                <span className="font-semibold text-orange-600">requirements and documentations</span> necessary for
+                <span className="font-semibold text-yellow-600">requirements and documentations</span> necessary for
                 one to study and work in{" "}
                 <span className="inline-flex flex-wrap gap-1">
                   {countries.map((country, index) => (
                     <span key={country.name}>
                       <Link
                         href={country.href}
-                        className="font-semibold text-blue-600 hover:text-orange-600 underline decoration-dotted transition-colors"
+                        className="font-semibold text-blue-600 hover:text-yellow-600 underline decoration-dotted transition-colors"
                       >
                         {country.name}
                       </Link>
@@ -123,7 +123,7 @@ const OverviewSection = () => {
               transition={{ delay: 0.6 }}
               className="flex items-center gap-3 pt-4"
             >
-              <div className="w-12 h-1 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full" />
+              <div className="w-12 h-1 bg-gradient-to-r from-yellow-500 to-yellow-500 rounded-full" />
               <Globe2 className="w-8 h-8 text-blue-600" />
             </motion.div>
           </motion.div>
@@ -137,7 +137,7 @@ const OverviewSection = () => {
             className="relative"
           >
             {/* Decorative frame */}
-            <div className="absolute -inset-4 bg-gradient-to-br from-orange-200/50 via-yellow-200/50 to-orange-200/50 rounded-3xl blur-xl" />
+            <div className="absolute -inset-4 bg-gradient-to-br from-yellow-200/50 via-yellow-200/50 to-yellow-200/50 rounded-3xl blur-xl" />
 
             <div className="relative">
               <VideoPlayer
@@ -148,7 +148,7 @@ const OverviewSection = () => {
             </div>
 
             {/* Decorative corner accents */}
-            <div className="absolute -top-6 -left-6 w-24 h-24 border-t-4 border-l-4 border-orange-500 rounded-tl-3xl opacity-50" />
+            <div className="absolute -top-6 -left-6 w-24 h-24 border-t-4 border-l-4 border-yellow-500 rounded-tl-3xl opacity-50" />
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-4 border-r-4 border-blue-500 rounded-br-3xl opacity-50" />
           </motion.div>
         </div>

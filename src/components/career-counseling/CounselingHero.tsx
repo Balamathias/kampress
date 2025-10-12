@@ -29,7 +29,7 @@ const CounselingHero = () => {
           opacity: [0.3, 0.5, 0.3],
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-orange-500/30 to-yellow-500/30 rounded-full blur-3xl"
+        className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-yellow-500/30 to-yellow-500/30 rounded-full blur-3xl"
       />
 
       {/* Content */}
@@ -47,7 +47,7 @@ const CounselingHero = () => {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center gap-2 px-5 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6"
           >
-            <Compass className="w-5 h-5 text-orange-400" />
+            <Compass className="w-5 h-5 text-yellow-400" />
             <span className="text-sm font-semibold text-white">Expert Guidance</span>
           </motion.div>
 
@@ -59,7 +59,7 @@ const CounselingHero = () => {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
             <span className="block text-white mb-2">Career Counseling &</span>
-            <span className="block bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent animate-gradient">
+            <span className="block bg-gradient-to-r from-yellow-400 via-yellow-400 to-yellow-400 bg-clip-text text-transparent animate-gradient">
               Visa Guide
             </span>
           </motion.h1>
@@ -72,7 +72,7 @@ const CounselingHero = () => {
             className="text-lg sm:text-xl lg:text-2xl text-white/95 leading-relaxed max-w-4xl mx-auto"
           >
             Oversea career/study guide encompasses{" "}
-            <span className="font-semibold text-orange-300">counseling, visa and accommodation walk-through</span>.
+            <span className="font-semibold text-yellow-300">counseling, visa and accommodation walk-through</span>.
             <br />
             <span className="text-base sm:text-lg mt-2 block">
               Lets discover, inform and seamlessly place you.
@@ -86,7 +86,7 @@ const CounselingHero = () => {
             transition={{ delay: 0.7, type: "spring", stiffness: 200 }}
             className="mt-8 inline-flex p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20"
           >
-            <GraduationCap className="w-12 h-12 text-orange-400" />
+            <GraduationCap className="w-12 h-12 text-yellow-400" />
           </motion.div>
         </motion.div>
       </div>

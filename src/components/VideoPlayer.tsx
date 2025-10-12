@@ -189,7 +189,7 @@ const VideoPlayer = ({
             exit={{ opacity: 0 }}
             className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm"
           >
-            <Loader2 className="w-12 h-12 text-orange-500 animate-spin" />
+            <Loader2 className="w-12 h-12 text-yellow-500 animate-spin" />
           </motion.div>
         )}
       </AnimatePresence>
@@ -207,7 +207,7 @@ const VideoPlayer = ({
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="w-20 h-20 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center shadow-2xl hover:shadow-orange-500/50 transition-all duration-300"
+              className="w-20 h-20 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 flex items-center justify-center shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300"
             >
               <Play className="w-10 h-10 text-white ml-1" fill="white" />
             </motion.button>
@@ -228,7 +228,7 @@ const VideoPlayer = ({
             <div className="mb-4">
               <div className="relative h-1.5 bg-white/20 rounded-full overflow-hidden group/progress cursor-pointer">
                 <motion.div
-                  className="absolute left-0 top-0 h-full bg-gradient-to-r from-orange-500 to-orange-600"
+                  className="absolute left-0 top-0 h-full bg-gradient-to-r from-yellow-500 to-yellow-600"
                   style={{ width: `${progress}%` }}
                 />
                 <input

@@ -23,7 +23,7 @@ const StudyAbroadHero = () => {
       <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 8, repeat: Infinity }}
-        className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-orange-500/30 to-yellow-500/30 rounded-full blur-3xl"
+        className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-yellow-500/30 to-yellow-500/30 rounded-full blur-3xl"
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-28">
@@ -39,7 +39,7 @@ const StudyAbroadHero = () => {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center gap-2 px-5 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6"
           >
-            <Globe2 className="w-5 h-5 text-orange-400" />
+            <Globe2 className="w-5 h-5 text-yellow-400" />
             <span className="text-sm font-semibold text-white">Global Opportunities</span>
           </motion.div>
 
@@ -50,7 +50,7 @@ const StudyAbroadHero = () => {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
             <span className="block text-white mb-2">Study & Work Abroad in</span>
-            <span className="block bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent animate-gradient">
+            <span className="block bg-gradient-to-r from-yellow-400 via-yellow-400 to-yellow-400 bg-clip-text text-transparent animate-gradient">
               Selected Countries
             </span>
           </motion.h1>

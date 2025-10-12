@@ -21,18 +21,18 @@ const DurationContent = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl p-8 sm:p-10 shadow-xl border border-orange-200"
+            className="relative bg-gradient-to-br from-yellow-50 to-yellow-50 rounded-3xl p-8 sm:p-10 shadow-xl border border-yellow-200"
           >
-            <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 shadow-lg mb-6">
+            <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-yellow-500 to-yellow-600 shadow-lg mb-6">
               <Clock className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-2xl sm:text-3xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-orange-700 to-yellow-700 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-700 to-yellow-700 bg-clip-text text-transparent">
                 Duration & Content Highlights
               </span>
             </h3>
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-              This <span className="font-bold text-orange-600">two weeks' program</span> is{" "}
+              This <span className="font-bold text-yellow-600">two weeks' program</span> is{" "}
               <span className="font-semibold">scientific, daring and practical</span> with intuitive outline
               designed by professionals. Some aspects of{" "}
               <span className="font-semibold">social and developmental psychology</span> are deployed to achieve results.
@@ -47,7 +47,7 @@ const DurationContent = () => {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="w-6 h-6 rounded-full bg-orange-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Lightbulb className="w-3 h-3 text-white" />
                   </div>
                   <span className="text-gray-700">{item}</span>

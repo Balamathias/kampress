@@ -70,7 +70,7 @@ const Footer = () => {
           opacity: [0.1, 0.2, 0.1],
         }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-orange-500/20 to-yellow-500/20 rounded-full blur-3xl"
+        className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-yellow-500/20 to-yellow-500/20 rounded-full blur-3xl"
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -114,8 +114,8 @@ const Footer = () => {
                     className={`flex items-center gap-3 p-3 rounded-xl bg-white/5 backdrop-blur-sm ${social.color} transition-all duration-300 group`}
                     aria-label={social.label}
                   >
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center group-hover:from-white group-hover:to-white transition-all">
-                      <social.icon className="w-5 h-5 text-white group-hover:text-orange-600 transition-colors" />
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center group-hover:from-white group-hover:to-white transition-all">
+                      <social.icon className="w-5 h-5 text-white group-hover:text-yellow-600 transition-colors" />
                     </div>
                     <span className="text-sm font-medium">{social.label}</span>
                   </motion.a>
@@ -131,7 +131,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-6"
             >
-              <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
                 Quick Links
               </h3>
               <ul className="space-y-3">
@@ -145,7 +145,7 @@ const Footer = () => {
                   >
                     <Link
                       href={link.href}
-                      className="group flex items-center gap-2 text-gray-300 hover:text-orange-400 transition-colors text-sm"
+                      className="group flex items-center gap-2 text-gray-300 hover:text-yellow-400 transition-colors text-sm"
                     >
                       <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-6 group-hover:ml-0 transition-all" />
                       <span>{link.name}</span>
@@ -163,7 +163,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="space-y-6"
             >
-              <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
                 Our Services
               </h3>
               <ul className="space-y-3">
@@ -177,7 +177,7 @@ const Footer = () => {
                   >
                     <Link
                       href={service.href}
-                      className="group flex items-center gap-2 text-gray-300 hover:text-orange-400 transition-colors text-sm"
+                      className="group flex items-center gap-2 text-gray-300 hover:text-yellow-400 transition-colors text-sm"
                     >
                       <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-6 group-hover:ml-0 transition-all" />
                       <span>{service.name}</span>
@@ -195,7 +195,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="space-y-6"
             >
-              <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
                 Contact
               </h3>
               <div className="space-y-4">
@@ -203,7 +203,7 @@ const Footer = () => {
                   whileHover={{ x: 5 }}
                   className="flex items-start gap-3 text-gray-300 text-sm"
                 >
-                  <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-medium text-white mb-1">Abuja Office</p>
                     <p>SUITE 314A DBM PLAZA NOUAKCHOTT STREET WUSE ZONE 1</p>
@@ -214,7 +214,7 @@ const Footer = () => {
                   whileHover={{ x: 5 }}
                   className="flex items-start gap-3 text-gray-300 text-sm"
                 >
-                  <Phone className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                  <Phone className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <p>+2347047780438</p>
                     <p>+2349165012740</p>
@@ -225,7 +225,7 @@ const Footer = () => {
                   whileHover={{ x: 5 }}
                   className="flex items-start gap-3 text-gray-300 text-sm"
                 >
-                  <Mail className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                  <Mail className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                   <p className="break-all">kampressgps@studyabroad24.com</p>
                 </motion.div>
               </div>
@@ -251,7 +251,7 @@ const Footer = () => {
                 href="https://flawlessvilleerp.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-orange-400 hover:text-orange-300 transition-colors font-medium"
+                className="text-yellow-400 hover:text-yellow-300 transition-colors font-medium"
               >
                 Flawless Ville Enterprise Resource Center
               </a>
@@ -261,7 +261,7 @@ const Footer = () => {
       </div>
 
       {/* Decorative bottom accent */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500" />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500" />
     </footer>
   );
 };

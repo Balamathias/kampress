@@ -39,7 +39,7 @@ const SimpleSteps = () => {
   ];
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-orange-100/50 via-yellow-50/30 to-white overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-yellow-100/50 via-yellow-50/30 to-white overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -58,7 +58,7 @@ const SimpleSteps = () => {
           opacity: [0.15, 0.25, 0.15],
         }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-10 w-96 h-96 bg-gradient-to-br from-orange-300/30 to-yellow-300/30 rounded-full blur-3xl"
+        className="absolute top-20 right-10 w-96 h-96 bg-gradient-to-br from-yellow-300/30 to-yellow-300/30 rounded-full blur-3xl"
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -76,10 +76,10 @@ const SimpleSteps = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-100 to-yellow-100 rounded-full border border-orange-300 mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-100 to-yellow-100 rounded-full border border-yellow-300 mb-6"
             >
-              <List className="w-4 h-4 text-orange-600" />
-              <span className="text-sm font-semibold text-orange-700">Getting Started</span>
+              <List className="w-4 h-4 text-yellow-600" />
+              <span className="text-sm font-semibold text-yellow-700">Getting Started</span>
             </motion.div>
 
             <motion.h2
@@ -89,7 +89,7 @@ const SimpleSteps = () => {
               transition={{ delay: 0.3 }}
               className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4"
             >
-              <span className="bg-gradient-to-r from-orange-700 via-yellow-700 to-orange-700 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-700 via-yellow-700 to-yellow-700 bg-clip-text text-transparent">
                 Simple Steps Taken to Study Abroad
               </span>
             </motion.h2>
@@ -118,12 +118,12 @@ const SimpleSteps = () => {
                 className="group relative"
               >
                 {/* Card */}
-                <div className="relative h-full bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-orange-500 overflow-hidden">
+                <div className="relative h-full bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-yellow-500 overflow-hidden">
                   {/* Background gradient on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-yellow-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 to-yellow-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                   {/* Step Number */}
-                  <div className="absolute top-4 right-4 text-6xl font-bold text-orange-100 group-hover:text-orange-200 transition-colors">
+                  <div className="absolute top-4 right-4 text-6xl font-bold text-yellow-100 group-hover:text-yellow-200 transition-colors">
                     {step.number}
                   </div>
 
@@ -131,7 +131,7 @@ const SimpleSteps = () => {
                   <motion.div
                     whileHover={{ rotate: 360, scale: 1.1 }}
                     transition={{ duration: 0.6 }}
-                    className="inline-flex p-3 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 shadow-md mb-4 relative z-10"
+                    className="inline-flex p-3 rounded-xl bg-gradient-to-br from-yellow-500 to-yellow-600 shadow-md mb-4 relative z-10"
                   >
                     <step.icon className="w-6 h-6 text-white" />
                   </motion.div>
@@ -162,7 +162,7 @@ const SimpleSteps = () => {
                     whileInView={{ scaleX: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.7 + index * 0.1, duration: 0.5 }}
-                    className={`hidden lg:block absolute top-1/2 -right-8 w-8 h-0.5 bg-gradient-to-r from-orange-400 to-yellow-400 ${
+                    className={`hidden lg:block absolute top-1/2 -right-8 w-8 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-400 ${
                       (index + 1) % 3 === 0 ? "lg:hidden" : ""
                     }`}
                   />
@@ -179,13 +179,13 @@ const SimpleSteps = () => {
             transition={{ duration: 0.8, delay: 1.2 }}
             className="text-center"
           >
-            <div className="inline-block bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl p-8 sm:p-10 shadow-xl border border-orange-200">
+            <div className="inline-block bg-gradient-to-br from-yellow-50 to-yellow-50 rounded-3xl p-8 sm:p-10 shadow-xl border border-yellow-200">
               <p className="text-gray-700 text-lg sm:text-xl font-medium mb-6">
                 Ready to start your journey to study abroad?
               </p>
               <Button
                 size="lg"
-                className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-10 py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                className="group rounded-full bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:from-yellow-600 hover:via-yellow-700 hover:to-yellow-800 text-white px-10 py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               >
                 Get Started Today
                 <motion.span
@@ -212,7 +212,7 @@ const SimpleSteps = () => {
           <path
             d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 55C840 50 960 40 1080 40C1200 40 1320 50 1380 55L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z"
             fill="currentColor"
-            className="text-orange-100"
+            className="text-yellow-100"
           />
         </svg>
       </div>

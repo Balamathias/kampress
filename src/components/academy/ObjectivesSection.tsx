@@ -38,7 +38,7 @@ const ObjectivesSection = () => {
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Objectives set to achieve after{" "}
-            <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-400 to-yellow-400 bg-clip-text text-transparent">
               each session
             </span>
           </h2>
@@ -54,7 +54,7 @@ const ObjectivesSection = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10"
             >
-              <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 mb-4`}>
+              <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-yellow-500 to-yellow-600 mb-4`}>
                 <obj.icon className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">{obj.title}</h3>
