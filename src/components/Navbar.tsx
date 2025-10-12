@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { countries } from "./career-counseling/CounselingFormSection";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -96,18 +97,16 @@ const Navbar = () => {
                           exit={{ opacity: 0, y: 10 }}
                           className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 border border-gray-100"
                         >
-                          <Link
-                            href="/study-abroad"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors"
-                          >
-                            Study Abroad
-                          </Link>
-                          <Link
-                            href="/work-abroad"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors"
-                          >
-                            Work Abroad
-                          </Link>
+                          {countries.map((country, index) => (
+                            <Link
+                              key={country.name}
+                              href={country.href}
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                              {country.name}
+                            </Link>
+                          ))}
                         </motion.div>
                       )}
                     </AnimatePresence>
@@ -194,20 +193,19 @@ const Navbar = () => {
                             exit={{ opacity: 0, height: 0 }}
                             className="ml-4 mt-1 space-y-1"
                           >
-                            <Link
-                              href="/study-abroad"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
-                              onClick={() => setIsMobileMenuOpen(false)}
-                            >
-                              Study Abroad
-                            </Link>
-                            <Link
-                              href="/work-abroad"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
-                              onClick={() => setIsMobileMenuOpen(false)}
-                            >
-                              Work Abroad
-                            </Link>
+                            
+                            {
+                              countries.map((country) => (
+                                <Link
+                                  key={country.name}
+                                  href={country.href}
+                                  className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                  {country.name}
+                                </Link>
+                              ))
+                            }
                           </motion.div>
                         )}
                       </AnimatePresence>

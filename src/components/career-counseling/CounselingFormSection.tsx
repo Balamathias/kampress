@@ -6,22 +6,23 @@ import Image from "next/image";
 import Link from "next/link";
 import CounselingForm from "@/components/forms/CounselingForm";
 
+export const countries = [
+  { name: "Study and work in Canada", href: "/study-abroad/canada", icon: "🇨🇦" },
+  { name: "Study and work in USA", href: "/study-abroad/usa", icon: "🇺🇸" },
+  { name: "Study and work in UK", href: "/study-abroad/uk", icon: "🇬🇧" },
+  { name: "Study and work in Netherlands", href: "/study-abroad/netherlands", icon: "🇳🇱" },
+  { name: "Study and work in France", href: "/study-abroad/france", icon: "🇫🇷" },
+  { name: "Study and work in Australia", href: "/study-abroad/australia", icon: "🇦🇺" },
+  { name: "Study and work in Ireland", href: "/study-abroad/ireland", icon: "🇮🇪" },
+  { name: "Study and work in Barbados", href: "/study-abroad/barbados", icon: "🇧🇧" },
+  { name: "Study and work in Mauritius", href: "/study-abroad/mauritius", icon: "🇲🇺" },
+  { name: "Study and work in Ghana", href: "/study-abroad/ghana", icon: "🇬🇭" },
+];
+
 const CounselingFormSection = () => {
-  const countries = [
-    { name: "Study and work in Canada", href: "/study-abroad/canada", icon: "🇨🇦" },
-    { name: "Study and work in USA", href: "/study-abroad/usa", icon: "🇺🇸" },
-    { name: "Study and work in UK", href: "/study-abroad/uk", icon: "🇬🇧" },
-    { name: "Study and work in Netherlands", href: "/study-abroad/netherlands", icon: "🇳🇱" },
-    { name: "Study and work in France", href: "/study-abroad/france", icon: "🇫🇷" },
-    { name: "Study and work in Australia", href: "/study-abroad/australia", icon: "🇦🇺" },
-    { name: "Study and work in Ireland", href: "/study-abroad/ireland", icon: "🇮🇪" },
-    { name: "Study and work in Barbados", href: "/study-abroad/barbados", icon: "🇧🇧" },
-    { name: "Study and work in Mauritius", href: "/study-abroad/mauritius", icon: "🇲🇺" },
-    { name: "Study and work in Ghana", href: "/study-abroad/ghana", icon: "🇬🇭" },
-  ];
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-blue-300 via-blue-900 to-blue-950 overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-blue-800 via-blue-900 to-blue-950 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -44,7 +45,7 @@ const CounselingFormSection = () => {
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-[1fr,400px] xl:grid-cols-[1fr,450px] gap-8 lg:gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
           {/* Form Section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
