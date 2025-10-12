@@ -39,7 +39,7 @@ const VideoPlayer = ({
   const [showControls, setShowControls] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [volume, setVolume] = useState(1);
-  const hideControlsTimeout = useRef<NodeJS.Timeout>();
+  const hideControlsTimeout = useRef<NodeJS.Timeout>(null);
 
   useEffect(() => {
     const video = videoRef.current;
