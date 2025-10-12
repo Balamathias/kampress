@@ -175,7 +175,7 @@ const ServicesDashboard = () => {
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              variants={cardVariants}
+              variants={cardVariants as any}
               onHoverStart={() => setHoveredCard(index)}
               onHoverEnd={() => setHoveredCard(null)}
               whileHover={{ y: -8 }}
