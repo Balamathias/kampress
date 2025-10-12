@@ -27,8 +27,9 @@ const Navbar = () => {
     { name: "Career Counseling/Visa Guide", href: "/career-counseling" },
     {
       name: "Study/Work Abroad",
-      href: "#",
-      hasDropdown: true
+      href: "/study-abroad",
+      hasDropdown: true,
+      items: countries,
     },
     { name: "Kampress Academy", href: "/academy" },
     { name: "Contact", href: "/contact" },
@@ -79,7 +80,8 @@ const Navbar = () => {
               >
                 {link.hasDropdown ? (
                   <>
-                    <button
+                    <Link
+                      href={link.href}
                       className={`flex items-center px-3 py-2 text-sm xl:text-base font-medium transition-colors duration-200 ${
                         isScrolled
                           ? "text-gray-700 hover:text-orange-600"
@@ -88,7 +90,7 @@ const Navbar = () => {
                     >
                       {link.name}
                       <ChevronDown className="ml-1 w-4 h-4" />
-                    </button>
+                    </Link>
                     <AnimatePresence>
                       {isStudyWorkOpen && (
                         <motion.div
@@ -97,7 +99,7 @@ const Navbar = () => {
                           exit={{ opacity: 0, y: 10 }}
                           className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 border border-gray-100"
                         >
-                          {countries.map((country, index) => (
+                          {link.items.map((country, index) => (
                             <Link
                               key={country.name}
                               href={country.href}
@@ -174,7 +176,8 @@ const Navbar = () => {
                 >
                   {link.hasDropdown ? (
                     <div>
-                      <button
+                      <Link
+                        href={link.href}
                         onClick={() => setIsStudyWorkOpen(!isStudyWorkOpen)}
                         className="flex items-center justify-between w-full px-4 py-3 text-base font-medium text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-lg transition-colors"
                       >
@@ -184,7 +187,7 @@ const Navbar = () => {
                             isStudyWorkOpen ? "rotate-180" : ""
                           }`}
                         />
-                      </button>
+                      </Link>
                       <AnimatePresence>
                         {isStudyWorkOpen && (
                           <motion.div
@@ -195,7 +198,7 @@ const Navbar = () => {
                           >
                             
                             {
-                              countries.map((country) => (
+                              link.items.map((country) => (
                                 <Link
                                   key={country.name}
                                   href={country.href}
