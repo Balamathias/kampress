@@ -37,7 +37,7 @@ const ServicesDashboard = () => {
       description: "We work directly with institutions or accredited international partners",
       gradient: "from-purple-500 to-pink-500",
       borderColor: "border-purple-500",
-      link: "/undergraduate-placement",
+      link: "/study-abroad",
     },
     {
       icon: GraduationCap,
@@ -45,7 +45,7 @@ const ServicesDashboard = () => {
       description: "We work directly with institutions or accredited international partners",
       gradient: "from-orange-500 to-red-500",
       borderColor: "border-orange-500",
-      link: "/postgraduate-placement",
+      link: "/study-abroad",
     },
     {
       icon: FileCheck,
@@ -53,7 +53,7 @@ const ServicesDashboard = () => {
       description: "Setting is professional guide designed to help you succeed",
       gradient: "from-green-500 to-emerald-500",
       borderColor: "border-green-500",
-      link: "/visa-guide",
+      link: "/career-counseling",
     },
     {
       icon: School,
@@ -61,7 +61,7 @@ const ServicesDashboard = () => {
       description: "We work directly with institutions or accredited international partners",
       gradient: "from-orange-500 to-orange-500",
       borderColor: "border-orange-500",
-      link: "/bootcamp-placement",
+      link: "/academy",
     },
     {
       icon: Award,

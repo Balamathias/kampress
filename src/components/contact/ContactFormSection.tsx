@@ -13,10 +13,10 @@ const ContactFormSection = () => {
   const [isSuccess, setIsSuccess] = useState(false);
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook", color: "hover:bg-blue-600" },
-    { icon: Twitter, href: "#", label: "Twitter", color: "hover:bg-blue-400" },
-    { icon: Instagram, href: "#", label: "Instagram", color: "hover:bg-pink-600" },
-    { icon: Youtube, href: "#", label: "YouTube", color: "hover:bg-red-600" },
+    { icon: Facebook, href: "https://facebook.com/kampressgps", label: "Facebook", color: "hover:bg-blue-600" },
+    { icon: Twitter, href: "https://twitter.com/kampressgps", label: "Twitter", color: "hover:bg-blue-400" },
+    { icon: Instagram, href: "https://instagram.com/kampressgps", label: "Instagram", color: "hover:bg-pink-600" },
+    { icon: Youtube, href: "https://youtube.com/@kampressgps", label: "YouTube", color: "hover:bg-red-600" },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -37,6 +37,8 @@ const ContactFormSection = () => {
             <motion.a
               key={social.label}
               href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ x: -100 }}
               animate={{ x: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -171,6 +173,8 @@ const ContactFormSection = () => {
               <motion.a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -5 }}
                 className={`w-14 h-14 rounded-full bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center ${social.color} transition-all shadow-lg`}
                 aria-label={social.label}

@@ -17,9 +17,9 @@ const Footer = () => {
 
   const services = [
     { name: "Kampress Academy", href: "/academy" },
-    { name: "Undergraduate Placement", href: "/undergraduate-placement" },
-    { name: "Postgraduate Placement", href: "/postgraduate-placement" },
-    { name: "Visa Assistance", href: "/visa-guide" },
+    { name: "Undergraduate Placement", href: "/study-abroad" },
+    { name: "Postgraduate Placement", href: "/study-abroad" },
+    { name: "Visa Assistance", href: "/career-counseling" },
   ];
 
   const socialLinks = [
