@@ -28,7 +28,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: "kampressgps@studyabroad24.com",
+      details: "info@kampressgps.com",
       gradient: "from-green-500 to-green-600",
     },
   ];
