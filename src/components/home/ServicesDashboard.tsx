@@ -15,6 +15,7 @@ import {
   Globe,
   UserCheck,
 } from "lucide-react";
+import Link from "next/link";
 
 const ServicesDashboard = () => {
   const statsRef = useRef(null);
@@ -173,51 +174,52 @@ const ServicesDashboard = () => {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-16 lg:mb-20"
         >
           {services.map((service, index) => (
-            <motion.div
-              key={service.title}
-              variants={cardVariants as any}
-              onHoverStart={() => setHoveredCard(index)}
-              onHoverEnd={() => setHoveredCard(null)}
-              whileHover={{ y: -8 }}
-              className="group relative"
-            >
-              <div
-                className={`relative h-full bg-white/5 backdrop-blur-md rounded-2xl p-6 sm:p-8 border-2 ${
-                  hoveredCard === index ? service.borderColor : "border-white/10"
-                } transition-all duration-300 hover:bg-white/10 hover:shadow-2xl hover:shadow-orange-500/20`}
+            <Link key={service.title} href={service.link}>
+              <motion.div
+                variants={cardVariants as any}
+                onHoverStart={() => setHoveredCard(index)}
+                onHoverEnd={() => setHoveredCard(null)}
+                whileHover={{ y: -8 }}
+                className="group relative cursor-pointer"
               >
-                {/* Icon */}
-                <motion.div
-                  animate={hoveredCard === index ? { rotate: [0, -10, 10, 0], scale: [1, 1.1, 1.1, 1] } : {}}
-                  transition={{ duration: 0.5 }}
-                  className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${service.gradient} mb-6 shadow-lg`}
+                <div
+                  className={`relative h-full bg-white/5 backdrop-blur-md rounded-2xl p-6 sm:p-8 border-2 ${
+                    hoveredCard === index ? service.borderColor : "border-white/10"
+                  } transition-all duration-300 hover:bg-white/10 hover:shadow-2xl hover:shadow-orange-500/20`}
                 >
-                  <service.icon className="w-8 h-8 text-white" />
-                </motion.div>
+                  {/* Icon */}
+                  <motion.div
+                    animate={hoveredCard === index ? { rotate: [0, -10, 10, 0], scale: [1, 1.1, 1.1, 1] } : {}}
+                    transition={{ duration: 0.5 }}
+                    className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${service.gradient} mb-6 shadow-lg`}
+                  >
+                    <service.icon className="w-8 h-8 text-white" />
+                  </motion.div>
 
-                {/* Title */}
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-orange-300 transition-colors">
-                  {service.title}
-                </h3>
+                  {/* Title */}
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-orange-300 transition-colors">
+                    {service.title}
+                  </h3>
 
-                {/* Description */}
-                <p className="text-white/70 text-sm sm:text-base leading-relaxed group-hover:text-white/90 transition-colors">
-                  {service.description}
-                </p>
+                  {/* Description */}
+                  <p className="text-white/70 text-sm sm:text-base leading-relaxed group-hover:text-white/90 transition-colors">
+                    {service.description}
+                  </p>
 
-                {/* Hover indicator */}
-                <motion.div
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={hoveredCard === index ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
-                  className="absolute bottom-6 right-6 text-orange-400 font-semibold text-sm"
-                >
-                  Learn More →
-                </motion.div>
+                  {/* Hover indicator */}
+                  <motion.div
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={hoveredCard === index ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
+                    className="absolute bottom-6 right-6 text-orange-400 font-semibold text-sm"
+                  >
+                    Learn More →
+                  </motion.div>
 
-                {/* Corner accent */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            </motion.div>
+                  {/* Corner accent */}
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </motion.div>
+            </Link>
           ))}
         </motion.div>
 

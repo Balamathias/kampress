@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, FileSearch, FileEdit, Send, FileCheck, Plane, List } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const SimpleSteps = () => {
   const steps = [
@@ -183,19 +184,21 @@ const SimpleSteps = () => {
               <p className="text-gray-700 text-lg sm:text-xl font-medium mb-6">
                 Ready to start your journey to study abroad?
               </p>
-              <Button
-                size="lg"
-                className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-10 py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-              >
-                Get Started Today
-                <motion.span
-                  animate={{ x: [0, 5, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                  className="ml-2"
+              <Link href="/career-counseling">
+                <Button
+                  size="lg"
+                  className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-10 py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
                 >
-                  →
-                </motion.span>
-              </Button>
+                  Get Started Today
+                  <motion.span
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                    className="ml-2"
+                  >
+                    →
+                  </motion.span>
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

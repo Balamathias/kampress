@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle2, FileText, GraduationCap, Plane, Search, UserCheck } from "lucide-react";
+import Link from "next/link";
 
 const ApplicationProcess = () => {
   const steps = [
@@ -135,13 +136,15 @@ const ApplicationProcess = () => {
           <p className="text-lg text-white/95 mb-6 max-w-2xl mx-auto">
             Our team of experts is here to guide you through every step of your study abroad journey.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-white text-orange-600 font-bold rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
-          >
-            Get Started Today
-          </motion.button>
+          <Link href="/career-counseling">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-white text-orange-600 font-bold rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
+            >
+              Get Started Today
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

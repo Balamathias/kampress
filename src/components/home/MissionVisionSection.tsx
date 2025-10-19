@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Target, Eye, Sparkles } from "lucide-react";
 import VideoPlayer from "@/components/VideoPlayer";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const MissionVisionSection = () => {
   return (
@@ -140,19 +141,21 @@ const MissionVisionSection = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
             >
-              <Button
-                size="lg"
-                className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                Learn More and Experience It
-                <motion.span
-                  animate={{ x: [0, 5, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                  className="ml-2"
+              <Link href="/academy">
+                <Button
+                  size="lg"
+                  className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
-                  →
-                </motion.span>
-              </Button>
+                  Learn More and Experience It
+                  <motion.span
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                    className="ml-2"
+                  >
+                    →
+                  </motion.span>
+                </Button>
+              </Link>
             </motion.div>
 
             {/* Stats */}

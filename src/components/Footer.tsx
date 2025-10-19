@@ -23,10 +23,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter", color: "hover:bg-blue-400" },
-    { icon: Facebook, href: "#", label: "Facebook", color: "hover:bg-blue-600" },
-    { icon: Instagram, href: "#", label: "Instagram", color: "hover:bg-pink-600" },
-    { icon: Youtube, href: "#", label: "YouTube", color: "hover:bg-red-600" },
+    { icon: Twitter, href: "https://twitter.com/kampressgps", label: "Twitter", color: "hover:bg-blue-400" },
+    { icon: Facebook, href: "https://facebook.com/kampressgps", label: "Facebook", color: "hover:bg-blue-600" },
+    { icon: Instagram, href: "https://instagram.com/kampressgps", label: "Instagram", color: "hover:bg-pink-600" },
+    { icon: Youtube, href: "https://youtube.com/@kampressgps", label: "YouTube", color: "hover:bg-red-600" },
   ];
 
   return (
@@ -106,6 +106,8 @@ const Footer = () => {
                   <motion.a
                     key={social.label}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}

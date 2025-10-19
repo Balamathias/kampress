@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Globe2, ExternalLink, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const CountriesSection = () => {
   const countries = [
@@ -165,22 +166,26 @@ const CountriesSection = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button
-                  size="lg"
-                  className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-                >
-                  View Documentation
-                  <FileText className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <Link href="/contact">
+                  <Button
+                    size="lg"
+                    className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    View Documentation
+                    <FileText className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
 
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/50 hover:bg-white/20 text-white px-8 py-6 text-base font-semibold shadow-xl transition-all duration-300 transform hover:scale-105"
-                >
-                  Contact Us
-                  <ExternalLink className="ml-2 w-5 h-5" />
-                </Button>
+                <Link href="/contact">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/50 hover:bg-white/20 text-white px-8 py-6 text-base font-semibold shadow-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    Contact Us
+                    <ExternalLink className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
               </div>
             </div>
 

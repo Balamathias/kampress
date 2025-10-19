@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, Globe, GraduationCap, Briefcase, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -143,21 +144,25 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 lg:mb-16"
           >
-            <Button
-              size="lg"
-              className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-            >
-              Get Started Today
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="group rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/50 hover:bg-white/20 text-white px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-            >
-              Learn More
-              <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+              >
+                Get Started Today
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link href="/about">
+              <Button
+                size="lg"
+                variant="outline"
+                className="group rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/50 hover:bg-white/20 text-white px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+              >
+                Learn More
+                <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Feature cards */}
