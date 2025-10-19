@@ -22,7 +22,7 @@ const ContactSection = () => {
       icon: Phone,
       title: "Call or Chat Us",
       details: "+2347047780438, +2349165012740",
-      gradient: "from-yellow-500 to-yellow-600",
+      gradient: "from-orange-500 to-orange-600",
     },
     {
       icon: Mail,
@@ -33,7 +33,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-yellow-50 via-white to-gray-50 overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-orange-50 via-white to-gray-50 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-30">
         <div
@@ -111,7 +111,7 @@ const ContactSection = () => {
                   viewport={{ once: true }}
                   transition={{ delay: 0.5 + index * 0.1 }}
                   whileHover={{ scale: 1.02, x: 10 }}
-                  className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-transparent hover:border-yellow-500"
+                  className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-transparent hover:border-orange-500"
                 >
                   <div className="flex items-start gap-4">
                     {/* Icon */}
@@ -228,7 +228,7 @@ const ContactSection = () => {
             >
               <Button
                 size="lg"
-                className="group rounded-full bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:from-yellow-600 hover:via-yellow-700 hover:to-yellow-800 text-white px-8 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               >
                 Send Us a Message
                 <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

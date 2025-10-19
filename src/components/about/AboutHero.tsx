@@ -28,7 +28,7 @@ const AboutHero = () => {
           opacity: [0.3, 0.5, 0.3],
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-yellow-500/30 to-yellow-500/30 rounded-full blur-3xl"
+        className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-orange-500/30 to-orange-500/30 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -54,7 +54,7 @@ const AboutHero = () => {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center gap-2 px-5 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6"
           >
-            <Users className="w-5 h-5 text-yellow-400" />
+            <Users className="w-5 h-5 text-orange-400" />
             <span className="text-sm font-semibold text-white">Our Story</span>
           </motion.div>
 
@@ -66,7 +66,7 @@ const AboutHero = () => {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
             <span className="block text-white mb-2">About</span>
-            <span className="block bg-gradient-to-r from-yellow-400 via-yellow-400 to-yellow-400 bg-clip-text text-transparent animate-gradient">
+            <span className="block bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400 bg-clip-text text-transparent animate-gradient">
               Kampress Global Placement Service
             </span>
           </motion.h1>
@@ -86,7 +86,7 @@ const AboutHero = () => {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="mt-8 h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-yellow-400 to-transparent"
+            className="mt-8 h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-orange-400 to-transparent"
           />
         </motion.div>
       </div>

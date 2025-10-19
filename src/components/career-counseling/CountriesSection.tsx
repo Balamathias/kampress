@@ -9,12 +9,12 @@ const CountriesSection = () => {
     { name: "Canada", flag: "🇨🇦", color: "from-red-500 to-red-600" },
     { name: "United States", flag: "🇺🇸", color: "from-blue-600 to-blue-700" },
     { name: "United Kingdom", flag: "🇬🇧", color: "from-blue-700 to-indigo-700" },
-    { name: "Netherlands", flag: "🇳🇱", color: "from-yellow-500 to-red-500" },
+    { name: "Netherlands", flag: "🇳🇱", color: "from-orange-500 to-red-500" },
     { name: "France", flag: "🇫🇷", color: "from-blue-600 to-indigo-600" },
     { name: "Australia", flag: "🇦🇺", color: "from-blue-500 to-blue-600" },
     { name: "Ireland", flag: "🇮🇪", color: "from-green-600 to-emerald-600" },
-    { name: "Barbados", flag: "🇧🇧", color: "from-blue-500 to-yellow-500" },
-    { name: "Ghana", flag: "🇬🇭", color: "from-red-600 to-yellow-500" },
+    { name: "Barbados", flag: "🇧🇧", color: "from-blue-500 to-orange-500" },
+    { name: "Ghana", flag: "🇬🇭", color: "from-red-600 to-orange-500" },
     { name: "Mauritius", flag: "🇲🇺", color: "from-red-500 to-blue-600" },
   ];
 
@@ -153,7 +153,7 @@ const CountriesSection = () => {
             {/* Content */}
             <div className="relative z-10 text-center space-y-6">
               <div className="inline-flex p-4 rounded-2xl bg-white/10 backdrop-blur-sm mb-4">
-                <FileText className="w-8 h-8 text-yellow-400" />
+                <FileText className="w-8 h-8 text-orange-400" />
               </div>
 
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
@@ -167,7 +167,7 @@ const CountriesSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button
                   size="lg"
-                  className="group rounded-full bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:from-yellow-600 hover:via-yellow-700 hover:to-yellow-800 text-white px-8 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
                 >
                   View Documentation
                   <FileText className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -185,7 +185,7 @@ const CountriesSection = () => {
             </div>
 
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-yellow-500/20 to-transparent rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-500/20 to-transparent rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-blue-500/20 to-transparent rounded-full blur-3xl" />
           </div>
         </motion.div>

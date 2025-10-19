@@ -100,7 +100,7 @@ const CounselingChecklist = () => {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white"
           >
             Career and Visa/Immigration{" "}
-            <span className="bg-gradient-to-r from-yellow-400 to-yellow-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-400 to-orange-400 bg-clip-text text-transparent">
               Counseling Checklist
             </span>
           </motion.h2>
@@ -205,13 +205,13 @@ const CounselingChecklist = () => {
             className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-gray-100 overflow-hidden"
           >
             {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 to-yellow-50 opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-50 opacity-50" />
 
             {/* Content */}
             <div className="relative z-10">
               {/* Title */}
               <div className="mb-6">
-                <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-yellow-500 to-yellow-600 shadow-lg mb-3">
+                <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 shadow-lg mb-3">
                   <List className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">Simple Steps Taken to Study Abroad</h3>
@@ -228,7 +228,7 @@ const CounselingChecklist = () => {
                     transition={{ delay: 0.6 + index * 0.05 }}
                     className="flex items-start gap-3 group"
                   >
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <CheckCircle2 className="w-4 h-4 text-white" fill="white" strokeWidth={0} />
                     </div>
                     <span className="text-gray-700 text-sm sm:text-base leading-snug pt-1">

@@ -54,7 +54,7 @@ const HeroSection = () => {
         </AnimatePresence>
 
         {/* Gradient Overlays for depth and text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-purple-900/80 to-yellow-900/75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-purple-900/80 to-orange-900/75" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
 
         {/* Animated gradient blobs */}
@@ -65,7 +65,7 @@ const HeroSection = () => {
             opacity: [0.3, 0.5, 0.3],
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-br from-yellow-500/30 to-pink-500/30 rounded-full blur-3xl"
+          className="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-br from-orange-500/30 to-pink-500/30 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -86,7 +86,7 @@ const HeroSection = () => {
             onClick={() => setCurrentSlide(index)}
             className={`h-1.5 rounded-full transition-all duration-300 ${
               index === currentSlide
-                ? "w-8 bg-yellow-500"
+                ? "w-8 bg-orange-500"
                 : "w-1.5 bg-white/50 hover:bg-white/80"
             }`}
             aria-label={`Go to slide ${index + 1}`}
@@ -110,7 +110,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <span className="block text-white mb-2">Welcome to</span>
-              <span className="block bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent animate-gradient">
+              <span className="block bg-gradient-to-r from-orange-50 via-orange-100 to-white bg-clip-text text-transparent animate-gradient">
                 Kampress Global Placement
               </span>
               <span className="block text-white mt-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
@@ -126,12 +126,12 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-8 lg:mb-12 leading-relaxed max-w-4xl mx-auto px-4"
           >
-            Study and work in{" "}
-            <span className="font-semibold bg-gradient-to-r from-yellow-300 to-yellow-400 bg-clip-text text-transparent">
+            Study in{" "}
+            <span className="font-semibold bg-gradient-to-r from-orange-300 to-orange-400 bg-clip-text text-transparent">
               {countries.slice(0, -1).join(", ")}
             </span>
             {" "}and{" "}
-            <span className="font-semibold bg-gradient-to-r from-yellow-300 to-yellow-400 bg-clip-text text-transparent">
+            <span className="font-semibold bg-gradient-to-r from-orange-300 to-orange-400 bg-clip-text text-transparent">
               {countries[countries.length - 1]}
             </span>
           </motion.p>
@@ -145,7 +145,7 @@ const HeroSection = () => {
           >
             <Button
               size="lg"
-              className="group rounded-full bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:from-yellow-600 hover:via-yellow-700 hover:to-yellow-800 text-white px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+              className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
             >
               Get Started Today
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -176,9 +176,9 @@ const HeroSection = () => {
               },
               {
                 icon: Briefcase,
-                title: "Work Opportunities",
-                description: "Global career pathways",
-                gradient: "from-yellow-500 to-red-500",
+                title: "Explore Opportunities",
+                description: "Global career pathways starts with a good school.",
+                gradient: "from-orange-500 to-red-500",
               },
               {
                 icon: Globe,
@@ -193,7 +193,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.9 + index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="group relative bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:border-yellow-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/20"
+                className="group relative bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:border-orange-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/20"
               >
                 <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${feature.gradient} mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-6 h-6 text-white" />

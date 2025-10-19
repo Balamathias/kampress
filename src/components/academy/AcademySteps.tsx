@@ -35,9 +35,9 @@ const AcademySteps = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl border-l-4 border-yellow-500"
+              className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl border-l-4 border-orange-500"
             >
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center flex-shrink-0">
                 <CheckCircle2 className="w-5 h-5 text-white" fill="white" strokeWidth={0} />
               </div>
               <p className="text-gray-700 font-medium">{step.text}</p>

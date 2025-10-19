@@ -28,7 +28,7 @@ const Navbar = () => {
     { name: "About Us", href: "/about" },
     { name: "Career Counseling/Visa Guide", href: "/career-counseling" },
     {
-      name: "Study/Work Abroad",
+      name: "Study Abroad",
       href: "/study-abroad",
       hasDropdown: true,
       items: countries,
@@ -95,10 +95,10 @@ const Navbar = () => {
                         isActive(link.href)
                           ? isScrolled
                             ? "text-orange-600 font-semibold"
-                            : "text-yellow-300 font-semibold"
+                            : "text-orange-300 font-semibold"
                           : isScrolled
-                          ? "text-gray-700 hover:text-yellow-600"
-                          : "text-white hover:text-yellow-300"
+                          ? "text-gray-700 hover:text-orange-600"
+                          : "text-white hover:text-orange-300"
                       }`}
                     >
                       {link.name}
@@ -106,7 +106,7 @@ const Navbar = () => {
                       {isActive(link.href) && (
                         <motion.div
                           layoutId="activeLink"
-                          className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full"
+                          className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-500 rounded-full"
                           transition={{ type: "spring", stiffness: 380, damping: 30 }}
                         />
                       )}
@@ -123,7 +123,7 @@ const Navbar = () => {
                             <Link
                               key={country.name}
                               href={country.href}
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-yellow-600 hover:bg-yellow-50 rounded-lg transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
                               {country.name}
@@ -140,17 +140,17 @@ const Navbar = () => {
                       isActive(link.href)
                         ? isScrolled
                           ? "text-orange-600 font-semibold"
-                          : "text-yellow-300 font-semibold"
+                          : "text-orange-300 font-semibold"
                         : isScrolled
-                        ? "text-gray-700 hover:text-yellow-600"
-                        : "text-white hover:text-yellow-300"
+                        ? "text-gray-700 hover:text-orange-600"
+                        : "text-white hover:text-orange-300"
                     }`}
                   >
                     {link.name}
                     {isActive(link.href) && (
                       <motion.div
                         layoutId="activeLink"
-                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-500 rounded-full"
                         transition={{ type: "spring", stiffness: 380, damping: 30 }}
                       />
                     )}
@@ -165,7 +165,7 @@ const Navbar = () => {
               transition={{ delay: 0.6 }}
             >
               <Button
-                className="ml-4 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="ml-4 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Get Started
               </Button>
@@ -212,8 +212,8 @@ const Navbar = () => {
                         onClick={() => setIsStudyWorkOpen(!isStudyWorkOpen)}
                         className={`flex items-center justify-between w-full px-4 py-3 text-base font-medium rounded-lg transition-colors ${
                           isActive(link.href)
-                            ? "bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold"
-                            : "text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                            ? "bg-gradient-to-r from-orange-500 to-orange-500 text-white font-semibold"
+                            : "text-gray-700 hover:bg-orange-50 hover:text-orange-600"
                         }`}
                       >
                         {link.name}
@@ -237,7 +237,7 @@ const Navbar = () => {
                                 <Link
                                   key={country.name}
                                   href={country.href}
-                                  className="block px-4 py-2 text-sm text-gray-600 hover:text-yellow-600 hover:bg-yellow-50 rounded-lg transition-colors"
+                                  className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                   {country.name}
@@ -253,8 +253,8 @@ const Navbar = () => {
                       href={link.href}
                       className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
                         isActive(link.href)
-                          ? "bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold"
-                          : "text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                          ? "bg-gradient-to-r from-orange-500 to-orange-500 text-white font-semibold"
+                          : "text-gray-700 hover:bg-orange-50 hover:text-orange-600"
                       }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
@@ -270,7 +270,7 @@ const Navbar = () => {
                 className="pt-4"
               >
                 <Button
-                  className="w-full rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white py-3 shadow-lg"
+                  className="w-full rounded-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-3 shadow-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Get Started

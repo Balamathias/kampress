@@ -1,6 +1,6 @@
 # Technical Requirements
 
-You are going to be building a very beautiful, super-professional, framer-motion animated, mobile and all-devices responsive webapp for Kampress company with NextJS, TailwindCSS. The Primary color theme for the application is yellow; see configuration in /src/app/globals.css
+You are going to be building a very beautiful, super-professional, framer-motion animated, mobile and all-devices responsive webapp for Kampress company with NextJS, TailwindCSS. The Primary color theme for the application is orange; see configuration in /src/app/globals.css
 
 Use Minimal Spacing and Text Sizes on mobile for better representation and cross-accessibility.
 

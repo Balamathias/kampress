@@ -39,10 +39,10 @@ const StudyAbroadFormSection = () => {
   ];
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white via-yellow-50 to-white overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white via-orange-50 to-white overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-500 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-500 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-500 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -53,7 +53,7 @@ const StudyAbroadFormSection = () => {
           className="text-center mb-12 lg:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-yellow-600 via-yellow-600 to-yellow-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-600 via-orange-600 to-orange-600 bg-clip-text text-transparent">
               Start Your Application
             </span>
           </h2>
@@ -69,7 +69,7 @@ const StudyAbroadFormSection = () => {
             viewport={{ once: true }}
             className="lg:col-span-1 space-y-6"
           >
-            <div className="bg-gradient-to-br from-yellow-500 to-yellow-500 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-br from-orange-500 to-orange-500 rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Why Choose Kampress?</h3>
               <p className="text-white/90 leading-relaxed">
                 With over a decade of experience, we've helped thousands of students achieve their dreams of studying abroad. Our success rate speaks for itself.
@@ -84,10 +84,10 @@ const StudyAbroadFormSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:border-yellow-300"
+                  className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:border-orange-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-500 to-yellow-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-500 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <feature.icon className="w-5 h-5 text-white" />
                     </div>
                     <div>

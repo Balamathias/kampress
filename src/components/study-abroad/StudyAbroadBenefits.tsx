@@ -15,7 +15,7 @@ const StudyAbroadBenefits = () => {
       icon: GraduationCap,
       title: "World-Class Education",
       description: "Access top-ranked universities and cutting-edge research facilities across the globe.",
-      gradient: "from-yellow-500 to-yellow-500",
+      gradient: "from-orange-500 to-orange-500",
     },
     {
       icon: Briefcase,
@@ -46,7 +46,7 @@ const StudyAbroadBenefits = () => {
   return (
     <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white via-blue-50 to-white overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-yellow-500 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-64 h-64 bg-orange-500 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-500 rounded-full blur-3xl" />
       </div>
 
@@ -61,14 +61,14 @@ const StudyAbroadBenefits = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-yellow-500 to-yellow-500 rounded-full mb-6"
+            className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-orange-500 to-orange-500 rounded-full mb-6"
           >
             <Trophy className="w-5 h-5 text-white" />
             <span className="text-sm font-semibold text-white">Why Study Abroad?</span>
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-yellow-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-600 bg-clip-text text-transparent">
               Transform Your Future
             </span>
           </h2>

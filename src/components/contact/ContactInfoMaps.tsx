@@ -24,7 +24,7 @@ const ContactInfoMaps = () => {
       icon: Phone,
       title: "Call or Chat Us",
       details: "+2347047780438, +2349165012740",
-      gradient: "from-yellow-500 to-yellow-600",
+      gradient: "from-orange-500 to-orange-600",
     },
     {
       icon: Mail,
@@ -58,7 +58,7 @@ const ContactInfoMaps = () => {
                 <Button
                   onClick={() => window.open(card.mapUrl, "_blank")}
                   variant="outline"
-                  className="mt-6 rounded-full border-2 hover:bg-yellow-50 hover:border-yellow-500 hover:text-yellow-600"
+                  className="mt-6 rounded-full border-2 hover:bg-orange-50 hover:border-orange-500 hover:text-orange-600"
                 >
                   View on Map
                 </Button>

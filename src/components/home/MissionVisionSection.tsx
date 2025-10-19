@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const MissionVisionSection = () => {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white via-yellow-50/30 to-white overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white via-orange-50/30 to-white overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -16,7 +16,7 @@ const MissionVisionSection = () => {
             opacity: [0.1, 0.2, 0.1],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-yellow-200/30 to-yellow-200/30 rounded-full blur-3xl"
+          className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-orange-200/30 to-orange-200/30 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -60,10 +60,10 @@ const MissionVisionSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-100 to-yellow-50 rounded-full border border-yellow-200"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-100 to-orange-50 rounded-full border border-orange-200"
               >
-                <Sparkles className="w-4 h-4 text-yellow-600" />
-                <span className="text-sm font-semibold text-yellow-600">Our Purpose</span>
+                <Sparkles className="w-4 h-4 text-orange-600" />
+                <span className="text-sm font-semibold text-orange-600">Our Purpose</span>
               </motion.div>
 
               <motion.h2
@@ -87,22 +87,22 @@ const MissionVisionSection = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
               whileHover={{ scale: 1.02 }}
-              className="group relative bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-yellow-500"
+              className="group relative bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-orange-500"
             >
-              <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-50 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Target className="w-6 h-6 text-yellow-600" />
+              <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Target className="w-6 h-6 text-orange-600" />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
                   Our Mission
                 </span>
               </h3>
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 Using{" "}
-                <span className="font-semibold text-yellow-600">science</span>, we help{" "}
-                <span className="font-semibold text-yellow-600">students discover abilities, personalities</span>;
+                <span className="font-semibold text-orange-600">science</span>, we help{" "}
+                <span className="font-semibold text-orange-600">students discover abilities, personalities</span>;
                 then inform by getting them on same page using these evidences before we place them in the{" "}
-                <span className="font-semibold text-yellow-600">right college, or university</span>.
+                <span className="font-semibold text-orange-600">right college, or university</span>.
               </p>
             </motion.div>
 
@@ -119,16 +119,16 @@ const MissionVisionSection = () => {
                 <Eye className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-orange-400 to-orange-300 bg-clip-text text-transparent">
                   Our Vision
                 </span>
               </h3>
               <p className="text-white/90 text-base sm:text-lg leading-relaxed">
                 To be the{" "}
-                <span className="font-semibold text-yellow-300">world's leading global placement service</span>,
+                <span className="font-semibold text-orange-300">world's leading global placement service</span>,
                 empowering students to achieve their{" "}
-                <span className="font-semibold text-yellow-300">dreams of international education</span> and{" "}
-                <span className="font-semibold text-yellow-300">career success</span> through personalized,
+                <span className="font-semibold text-orange-300">dreams of international education</span> and{" "}
+                <span className="font-semibold text-orange-300">career success</span> through personalized,
                 science-backed guidance.
               </p>
             </motion.div>
@@ -142,7 +142,7 @@ const MissionVisionSection = () => {
             >
               <Button
                 size="lg"
-                className="group rounded-full bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:from-yellow-600 hover:via-yellow-700 hover:to-yellow-800 text-white px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="group rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Learn More and Experience It
                 <motion.span
@@ -174,9 +174,9 @@ const MissionVisionSection = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.8 + index * 0.1 }}
-                  className="text-center p-3 rounded-xl bg-gradient-to-br from-yellow-50 to-yellow-100/50 border border-yellow-200"
+                  className="text-center p-3 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100/50 border border-orange-200"
                 >
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent">
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">
                     {stat.value}
                   </div>
                   <div className="text-xs sm:text-sm text-gray-600 font-medium mt-1">
@@ -200,7 +200,7 @@ const MissionVisionSection = () => {
           <path
             d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 55C840 50 960 40 1080 40C1200 40 1320 50 1380 55L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z"
             fill="currentColor"
-            className="text-yellow-100"
+            className="text-orange-100"
           />
         </svg>
       </div>

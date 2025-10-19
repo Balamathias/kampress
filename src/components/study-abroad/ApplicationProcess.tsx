@@ -17,7 +17,7 @@ const ApplicationProcess = () => {
       number: "02",
       title: "Free Consultation",
       description: "Meet with our expert counselors to discuss your options and create a personalized plan.",
-      color: "from-yellow-500 to-yellow-500",
+      color: "from-orange-500 to-orange-500",
     },
     {
       icon: FileText,
@@ -53,8 +53,8 @@ const ApplicationProcess = () => {
     <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-gray-900 via-blue-900 to-gray-900 overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-yellow-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
         </div>
       </div>
 
@@ -71,13 +71,13 @@ const ApplicationProcess = () => {
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 px-5 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6"
           >
-            <CheckCircle2 className="w-5 h-5 text-yellow-400" />
+            <CheckCircle2 className="w-5 h-5 text-orange-400" />
             <span className="text-sm font-semibold text-white">Simple & Streamlined</span>
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
             Your Path to{" "}
-            <span className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-yellow-400 bg-clip-text text-transparent animate-gradient">
+            <span className="bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400 bg-clip-text text-transparent animate-gradient">
               International Education
             </span>
           </h2>
@@ -97,10 +97,10 @@ const ApplicationProcess = () => {
               className="relative mb-8 lg:mb-12 last:mb-0"
             >
               {index < steps.length - 1 && (
-                <div className="absolute left-8 lg:left-12 top-20 bottom-0 w-0.5 bg-gradient-to-b from-yellow-400 to-transparent hidden sm:block" />
+                <div className="absolute left-8 lg:left-12 top-20 bottom-0 w-0.5 bg-gradient-to-b from-orange-400 to-transparent hidden sm:block" />
               )}
 
-              <div className="flex flex-col sm:flex-row items-start gap-6 bg-white/5 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-white/10 hover:border-yellow-400/50 transition-all duration-300 hover:bg-white/10 group">
+              <div className="flex flex-col sm:flex-row items-start gap-6 bg-white/5 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-white/10 hover:border-orange-400/50 transition-all duration-300 hover:bg-white/10 group">
                 <div className="flex-shrink-0">
                   <div className={`relative w-16 h-16 lg:w-20 lg:h-20 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <step.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
@@ -111,7 +111,7 @@ const ApplicationProcess = () => {
                 </div>
 
                 <div className="flex-1">
-                  <h3 className="text-xl lg:text-2xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors">
+                  <h3 className="text-xl lg:text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">
                     {step.title}
                   </h3>
                   <p className="text-base lg:text-lg text-white/80 leading-relaxed">
@@ -127,7 +127,7 @@ const ApplicationProcess = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-12 lg:mt-16 bg-gradient-to-r from-yellow-500 to-yellow-500 rounded-2xl p-8 lg:p-12"
+          className="text-center mt-12 lg:mt-16 bg-gradient-to-r from-orange-500 to-orange-500 rounded-2xl p-8 lg:p-12"
         >
           <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
             Ready to Take the First Step?
@@ -138,7 +138,7 @@ const ApplicationProcess = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-white text-yellow-600 font-bold rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
+            className="px-8 py-4 bg-white text-orange-600 font-bold rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
           >
             Get Started Today
           </motion.button>

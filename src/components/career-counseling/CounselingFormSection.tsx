@@ -7,16 +7,16 @@ import Link from "next/link";
 import CounselingForm from "@/components/forms/CounselingForm";
 
 export const countries = [
-  { name: "Study and work in Canada", href: "/study-abroad/canada", icon: "🇨🇦" },
-  { name: "Study and work in USA", href: "/study-abroad/usa", icon: "🇺🇸" },
-  { name: "Study and work in UK", href: "/study-abroad/uk", icon: "🇬🇧" },
-  { name: "Study and work in Netherlands", href: "/study-abroad/netherlands", icon: "🇳🇱" },
-  { name: "Study and work in France", href: "/study-abroad/france", icon: "🇫🇷" },
-  { name: "Study and work in Australia", href: "/study-abroad/australia", icon: "🇦🇺" },
-  { name: "Study and work in Ireland", href: "/study-abroad/ireland", icon: "🇮🇪" },
-  { name: "Study and work in Barbados", href: "/study-abroad/barbados", icon: "🇧🇧" },
-  { name: "Study and work in Mauritius", href: "/study-abroad/mauritius", icon: "🇲🇺" },
-  { name: "Study and work in Ghana", href: "/study-abroad/ghana", icon: "🇬🇭" },
+  { name: "Study in Canada", href: "/study-abroad/canada", icon: "🇨🇦" },
+  { name: "Study in USA", href: "/study-abroad/usa", icon: "🇺🇸" },
+  { name: "Study in UK", href: "/study-abroad/uk", icon: "🇬🇧" },
+  { name: "Study in Netherlands", href: "/study-abroad/netherlands", icon: "🇳🇱" },
+  { name: "Study in France", href: "/study-abroad/france", icon: "🇫🇷" },
+  { name: "Study in Australia", href: "/study-abroad/australia", icon: "🇦🇺" },
+  { name: "Study in Ireland", href: "/study-abroad/ireland", icon: "🇮🇪" },
+  { name: "Study in Barbados", href: "/study-abroad/barbados", icon: "🇧🇧" },
+  { name: "Study in Mauritius", href: "/study-abroad/mauritius", icon: "🇲🇺" },
+  { name: "Study in Ghana", href: "/study-abroad/ghana", icon: "🇬🇭" },
 ];
 
 const CounselingFormSection = () => {
@@ -41,7 +41,7 @@ const CounselingFormSection = () => {
           opacity: [0.2, 0.3, 0.2],
         }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-yellow-500/20 to-yellow-500/20 rounded-full blur-3xl"
+        className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-orange-500/20 to-orange-500/20 rounded-full blur-3xl"
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -60,10 +60,10 @@ const CounselingFormSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-400/30 mb-4"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 backdrop-blur-sm rounded-full border border-orange-400/30 mb-4"
               >
-                <BookOpen className="w-4 h-4 text-yellow-400" />
-                <span className="text-sm font-semibold text-yellow-300">Get Started</span>
+                <BookOpen className="w-4 h-4 text-orange-400" />
+                <span className="text-sm font-semibold text-orange-300">Get Started</span>
               </motion.div>
 
               <motion.h2
@@ -129,15 +129,15 @@ const CounselingFormSection = () => {
                   >
                     <Link
                       href={country.href}
-                      className="group flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 border border-white/10 hover:border-yellow-400/30 transition-all duration-300"
+                      className="group flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-orange-500/20 border border-white/10 hover:border-orange-400/30 transition-all duration-300"
                     >
                       <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-lg group-hover:scale-110 transition-transform text-white">
                         {country.icon}
                       </div>
-                      <span className="text-sm text-yellow-300 font-medium flex-1 group-hover:text-yellow-200 transition-colors">
+                      <span className="text-sm text-orange-300 font-medium flex-1 group-hover:text-orange-200 transition-colors">
                         {country.name}
                       </span>
-                      <ExternalLink className="w-4 h-4 text-white/40 group-hover:text-yellow-400 transition-colors" />
+                      <ExternalLink className="w-4 h-4 text-white/40 group-hover:text-orange-400 transition-colors" />
                     </Link>
                   </motion.li>
                 ))}
@@ -150,19 +150,19 @@ const CounselingFormSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 1.0 }}
-              className="bg-gradient-to-br from-yellow-500/20 to-yellow-500/20 backdrop-blur-sm rounded-2xl p-6 border border-yellow-400/30"
+              className="bg-gradient-to-br from-orange-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-6 border border-orange-400/30"
             >
               <Link
                 href="/academy"
                 className="group block text-center space-y-3 hover:scale-105 transition-transform duration-300"
               >
-                <div className="inline-flex p-3 rounded-xl bg-yellow-500/30">
-                  <BookOpen className="w-6 h-6 text-yellow-300" />
+                <div className="inline-flex p-3 rounded-xl bg-orange-500/30">
+                  <BookOpen className="w-6 h-6 text-orange-300" />
                 </div>
                 <h3 className="text-base font-bold text-white">
                   Learn More About Our Discover & Inform Program from Kampress Academy
                 </h3>
-                <div className="flex items-center justify-center gap-2 text-yellow-300 font-semibold">
+                <div className="flex items-center justify-center gap-2 text-orange-300 font-semibold">
                   <span>Visit Academy</span>
                   <ExternalLink className="w-4 h-4" />
                 </div>

@@ -40,9 +40,9 @@ const PartnerUniversities = () => {
   const duplicatedUniversities = [...universities, ...universities];
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white via-yellow-50 to-yellow-50 overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white via-orange-50 to-orange-50 overflow-hidden">
       {/* Decorative top border */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 via-yellow-400 to-yellow-400" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400" />
 
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -62,7 +62,7 @@ const PartnerUniversities = () => {
           opacity: [0.1, 0.15, 0.1],
         }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-10 w-96 h-96 bg-gradient-to-br from-yellow-300/20 to-yellow-300/20 rounded-full blur-3xl"
+        className="absolute top-20 right-10 w-96 h-96 bg-gradient-to-br from-orange-300/20 to-orange-300/20 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -70,7 +70,7 @@ const PartnerUniversities = () => {
           opacity: [0.1, 0.15, 0.1],
         }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute bottom-20 left-10 w-96 h-96 bg-gradient-to-tl from-yellow-300/20 to-yellow-300/20 rounded-full blur-3xl"
+        className="absolute bottom-20 left-10 w-96 h-96 bg-gradient-to-tl from-orange-300/20 to-orange-300/20 rounded-full blur-3xl"
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -87,16 +87,16 @@ const PartnerUniversities = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-100 to-yellow-100 rounded-full border border-yellow-300 mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-100 to-orange-100 rounded-full border border-orange-300 mb-6"
           >
-            <Globe2 className="w-4 h-4 text-yellow-600" />
-            <span className="text-sm font-semibold text-yellow-700">Global Network</span>
+            <Globe2 className="w-4 h-4 text-orange-600" />
+            <span className="text-sm font-semibold text-orange-700">Global Network</span>
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
             <span className="text-gray-800">Some Partnering</span>
             <br />
-            <span className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-600 via-orange-500 to-orange-500 bg-clip-text text-transparent">
               Universities & Institutions
             </span>
           </h2>
@@ -115,8 +115,8 @@ const PartnerUniversities = () => {
           className="relative"
         >
           {/* Gradient overlays for fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-r from-yellow-50 via-yellow-50/80 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-l from-yellow-50 via-yellow-50/80 to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-r from-orange-50 via-orange-50/80 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-l from-orange-50 via-orange-50/80 to-transparent z-10 pointer-events-none" />
 
           {/* Scrolling container */}
           <div className="overflow-hidden py-8">
@@ -139,7 +139,7 @@ const PartnerUniversities = () => {
                 <motion.div
                   key={`${university.name}-${index}`}
                   whileHover={{ scale: 1.1, y: -10 }}
-                  className="flex-shrink-0 w-40 sm:w-48 lg:w-56 h-32 sm:h-36 lg:h-40 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 flex items-center justify-center group border border-gray-100 hover:border-yellow-300"
+                  className="flex-shrink-0 w-40 sm:w-48 lg:w-56 h-32 sm:h-36 lg:h-40 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 flex items-center justify-center group border border-gray-100 hover:border-orange-300"
                 >
                   <div className="relative w-full h-full">
                     <Image
@@ -165,7 +165,7 @@ const PartnerUniversities = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 + index * 0.02 }}
                 className={`h-2 rounded-full ${
-                  index < 3 ? "w-8 bg-yellow-500" : "w-2 bg-gray-300"
+                  index < 3 ? "w-8 bg-orange-500" : "w-2 bg-gray-300"
                 }`}
               />
             ))}
@@ -193,20 +193,20 @@ const PartnerUniversities = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.6 + index * 0.1 }}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="group relative bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-yellow-500 overflow-hidden"
+              className="group relative bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-orange-500 overflow-hidden"
             >
               {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 to-yellow-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Icon */}
               <div className="relative mb-4">
-                <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-yellow-100 to-yellow-100 group-hover:from-yellow-500 group-hover:to-yellow-600 transition-all duration-300">
-                  <stat.icon className="w-6 h-6 text-yellow-600 group-hover:text-white transition-colors" />
+                <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-orange-100 to-orange-100 group-hover:from-orange-500 group-hover:to-orange-600 transition-all duration-300">
+                  <stat.icon className="w-6 h-6 text-orange-600 group-hover:text-white transition-colors" />
                 </div>
               </div>
 
               {/* Value */}
-              <div className="relative text-3xl sm:text-4xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mb-2">
+              <div className="relative text-3xl sm:text-4xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent mb-2">
                 {stat.value}
               </div>
 

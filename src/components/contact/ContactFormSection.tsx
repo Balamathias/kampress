@@ -32,7 +32,7 @@ const ContactFormSection = () => {
     <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       {/* Social Media Sidebar - Fixed on left */}
       <div className="hidden lg:block fixed left-0 top-1/2 -translate-y-1/2 z-50">
-        <div className="bg-gradient-to-b from-yellow-500 to-yellow-500 rounded-r-2xl shadow-2xl overflow-hidden">
+        <div className="bg-gradient-to-b from-orange-500 to-orange-500 rounded-r-2xl shadow-2xl overflow-hidden">
           {socialLinks.map((social, index) => (
             <motion.a
               key={social.label}
@@ -45,7 +45,7 @@ const ContactFormSection = () => {
               aria-label={social.label}
             >
               <div className="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center group-hover:bg-white transition-colors">
-                <social.icon className="w-6 h-6 text-white group-hover:text-yellow-600 transition-colors" />
+                <social.icon className="w-6 h-6 text-white group-hover:text-orange-600 transition-colors" />
               </div>
             </motion.a>
           ))}
@@ -128,7 +128,7 @@ const ContactFormSection = () => {
                 type="submit"
                 disabled={isSubmitting || isSuccess}
                 size="lg"
-                className="w-full rounded-full bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:from-yellow-600 hover:via-yellow-700 hover:to-yellow-800 text-white py-6 text-base font-semibold shadow-xl"
+                className="w-full rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white py-6 text-base font-semibold shadow-xl"
               >
                 {isSubmitting ? (
                   <>

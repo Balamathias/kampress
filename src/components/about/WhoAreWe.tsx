@@ -71,7 +71,7 @@ const WhoAreWe = () => {
           >
             {/* Decorative corner accent */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-bl-full" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-yellow-500/10 to-yellow-500/10 rounded-tr-full" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-orange-500/10 to-orange-500/10 rounded-tr-full" />
 
             {/* Icon */}
             <motion.div
@@ -95,9 +95,9 @@ const WhoAreWe = () => {
               Introducing{" "}
               <span className="font-bold text-blue-900">Kampress Global Placement Services</span>; An
               educational service company handling{" "}
-              <span className="font-semibold text-yellow-600">study and work placements</span> for
+              <span className="font-semibold text-orange-600">study and work placements</span> for
               international students with associated{" "}
-              <span className="font-semibold text-yellow-600">
+              <span className="font-semibold text-orange-600">
                 capacity building and utilization
               </span>
               ..
@@ -129,7 +129,7 @@ const WhoAreWe = () => {
                 icon: Building2,
                 value: "25+",
                 label: "Partner Universities",
-                gradient: "from-yellow-500 to-yellow-600",
+                gradient: "from-orange-500 to-orange-600",
               },
               {
                 icon: Award,

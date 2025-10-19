@@ -20,7 +20,7 @@ const CountriesGrid = () => {
   ];
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-yellow-300 via-yellow-200 to-white overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-orange-300 via-orange-200 to-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -60,7 +60,7 @@ const CountriesGrid = () => {
                       <h3 className="text-white font-bold text-base sm:text-lg mb-2 drop-shadow-lg">
                         Study & Work in {country.name}
                       </h3>
-                      <div className="flex items-center justify-center gap-2 text-yellow-300 font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                      <div className="flex items-center justify-center gap-2 text-orange-300 font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity">
                         <span>Learn More</span>
                         <ArrowRight className="w-4 h-4" />
                       </div>

@@ -42,8 +42,8 @@ const ServicesDashboard = () => {
       icon: GraduationCap,
       title: "Post-graduate School Placement",
       description: "We work directly with institutions or accredited international partners",
-      gradient: "from-yellow-500 to-red-500",
-      borderColor: "border-yellow-500",
+      gradient: "from-orange-500 to-red-500",
+      borderColor: "border-orange-500",
       link: "/postgraduate-placement",
     },
     {
@@ -58,8 +58,8 @@ const ServicesDashboard = () => {
       icon: School,
       title: "Placement for Boot camp & Pro Certification Programs",
       description: "We work directly with institutions or accredited international partners",
-      gradient: "from-yellow-500 to-yellow-500",
-      borderColor: "border-yellow-500",
+      gradient: "from-orange-500 to-orange-500",
+      borderColor: "border-orange-500",
       link: "/bootcamp-placement",
     },
     {
@@ -120,7 +120,7 @@ const ServicesDashboard = () => {
           opacity: [0.2, 0.3, 0.2],
         }}
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-yellow-500/30 to-pink-500/30 rounded-full blur-3xl"
+        className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-orange-500/30 to-pink-500/30 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -148,12 +148,12 @@ const ServicesDashboard = () => {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-4"
           >
-            <Landmark className="w-4 h-4 text-yellow-400" />
+            <Landmark className="w-4 h-4 text-orange-400" />
             <span className="text-sm font-semibold text-white">Our Services</span>
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4">
-            <span className="bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-400 via-orange-300 to-orange-300 bg-clip-text text-transparent">
               Kampress Placement
             </span>
             <br />
@@ -184,7 +184,7 @@ const ServicesDashboard = () => {
               <div
                 className={`relative h-full bg-white/5 backdrop-blur-md rounded-2xl p-6 sm:p-8 border-2 ${
                   hoveredCard === index ? service.borderColor : "border-white/10"
-                } transition-all duration-300 hover:bg-white/10 hover:shadow-2xl hover:shadow-yellow-500/20`}
+                } transition-all duration-300 hover:bg-white/10 hover:shadow-2xl hover:shadow-orange-500/20`}
               >
                 {/* Icon */}
                 <motion.div
@@ -196,7 +196,7 @@ const ServicesDashboard = () => {
                 </motion.div>
 
                 {/* Title */}
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-yellow-300 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-orange-300 transition-colors">
                   {service.title}
                 </h3>
 
@@ -209,13 +209,13 @@ const ServicesDashboard = () => {
                 <motion.div
                   initial={{ opacity: 0, x: -10 }}
                   animate={hoveredCard === index ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
-                  className="absolute bottom-6 right-6 text-yellow-400 font-semibold text-sm"
+                  className="absolute bottom-6 right-6 text-orange-400 font-semibold text-sm"
                 >
                   Learn More →
                 </motion.div>
 
                 {/* Corner accent */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </motion.div>
           ))}
@@ -245,9 +245,9 @@ const ServicesDashboard = () => {
                   <motion.div
                     whileHover={{ scale: 1.2, rotate: 360 }}
                     transition={{ duration: 0.6 }}
-                    className="inline-flex p-3 rounded-full bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 border border-yellow-400/30 mb-4 group-hover:border-yellow-400 transition-colors"
+                    className="inline-flex p-3 rounded-full bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-400/30 mb-4 group-hover:border-orange-400 transition-colors"
                   >
-                    <stat.icon className="w-6 h-6 text-yellow-400" />
+                    <stat.icon className="w-6 h-6 text-orange-400" />
                   </motion.div>
 
                   {/* Value with counter animation */}
@@ -257,7 +257,7 @@ const ServicesDashboard = () => {
                     transition={{ delay: index * 0.1 + 0.3 }}
                     className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2"
                   >
-                    <span className="bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-300 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-orange-400 via-orange-300 to-orange-300 bg-clip-text text-transparent">
                       {stat.value}
                       {stat.suffix}
                     </span>
@@ -272,10 +272,10 @@ const ServicesDashboard = () => {
             </div>
 
             {/* Decorative corners */}
-            <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-yellow-400/50 rounded-tl-3xl" />
-            <div className="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-yellow-400/50 rounded-tr-3xl" />
-            <div className="absolute bottom-0 left-0 w-16 h-16 border-b-2 border-l-2 border-yellow-400/50 rounded-bl-3xl" />
-            <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-yellow-400/50 rounded-br-3xl" />
+            <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-orange-400/50 rounded-tl-3xl" />
+            <div className="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-orange-400/50 rounded-tr-3xl" />
+            <div className="absolute bottom-0 left-0 w-16 h-16 border-b-2 border-l-2 border-orange-400/50 rounded-bl-3xl" />
+            <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-orange-400/50 rounded-br-3xl" />
           </div>
         </motion.div>
       </div>
