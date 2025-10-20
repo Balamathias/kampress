@@ -271,7 +271,9 @@ const Navbar = () => {
                 transition={{ delay: navLinks.length * 0.05 }}
                 className="pt-4"
               >
-                <Link href="/contact">
+                <Link 
+                  href="/contact"
+                >
                   <Button
                     className="w-full rounded-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-3 shadow-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
