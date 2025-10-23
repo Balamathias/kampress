@@ -10,7 +10,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "Meet Us-Abuja",
-      details: "SUITE 314A DBM PLAZA NOUAKCHOTT STREET WUSE ZONE 1 ABUJA FCT",
+      details: "Angel Plaza, Plot1234, Samuel Ladoke Akintola Boulevard Garki, Abuja, Nigeria",
       gradient: "from-blue-500 to-blue-600",
     },
     {
@@ -156,14 +156,14 @@ const ContactSection = () => {
                 <Button
                   size="sm"
                   className="bg-white/90 backdrop-blur-sm hover:bg-white text-gray-700 shadow-md rounded-full text-xs"
-                  onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=SUITE+314A+DBM+PLAZA+NOUAKCHOTT+STREET+WUSE+ZONE+1+ABUJA+FCT", "_blank")}
+                  onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Angel+Plaza+Plot1234+Samuel+Ladoke+Akintola+Boulevard+Garki+Abuja+Nigeria", "_blank")}
                 >
                   View larger map
                 </Button>
               </div>
               <div className="aspect-video w-full relative bg-gray-100">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9747289283844!2d7.487729!3d9.076479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ba5c7c5c7c7%3A0x1c5c5c5c5c5c5c5c!2sDBM%20Plaza%20Abuja!5e0!3m2!1sen!2sng!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1234567890123!2d7.4914!3d9.0354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDInMDcuNCJOIDfCsDI5JzI5LjAiRQ!5e0!3m2!1sen!2sng!4v1234567890&q=Samuel+Ladoke+Akintola+Boulevard+Garki+Abuja"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

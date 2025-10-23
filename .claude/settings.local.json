@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat \"c:\\Users\\Mathias Bala\\laymen\\kampress\\src\\components\\study-abroad\\usa\\Overview.tsx\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

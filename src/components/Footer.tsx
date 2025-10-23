@@ -208,7 +208,7 @@ const Footer = () => {
                   <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-medium text-white mb-1">Abuja Office</p>
-                    <p>SUITE 314A DBM PLAZA NOUAKCHOTT STREET WUSE ZONE 1</p>
+                    <p>Angel Plaza, Plot1234, Samuel Ladoke Akintola Boulevard Garki, Abuja, Nigeria</p>
                   </div>
                 </motion.div>
 
