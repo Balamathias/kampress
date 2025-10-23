@@ -12,7 +12,7 @@ const Footer = () => {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Career Counseling/Visa Guide", href: "/career-counseling" },
-    { name: "Study/Work Abroad", href: "/study-abroad" },
+    { name: "Study", href: "/study-abroad" },
   ];
 
   const services = [
@@ -97,7 +97,7 @@ const Footer = () => {
                 </motion.div>
               </Link>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Making international education accessible. Your trusted partner for studying and working abroad.
+                Making international education accessible. Your trusted partner for studying and abroad.
               </p>
 
               {/* Social Links - Vertical layout */}
