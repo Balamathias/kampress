@@ -33,17 +33,26 @@ const MissionVisionSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
           {/* Video Player Side */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="order-2 lg:order-1"
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative"
           >
-            <VideoPlayer
-              src="/videos/kampress_placement_welcome_vid.mp4"
-              className="w-full aspect-video"
-              loop
-            />
+            {/* Decorative frame */}
+            <div className="absolute -inset-4 bg-gradient-to-br from-orange-200/50 via-orange-200/50 to-orange-200/50 rounded-3xl blur-xl" />
+
+            <div className="relative">
+              <VideoPlayer
+                src="/videos/kampress_placement_welcome_vid.mp4"
+                className="w-full aspect-video rounded-2xl"
+                loop
+              />
+            </div>
+
+            {/* Decorative corner accents */}
+            <div className="absolute -top-6 -left-6 w-24 h-24 border-t-4 border-l-4 border-orange-500 rounded-tl-3xl opacity-50" />
+            <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-4 border-r-4 border-blue-500 rounded-br-3xl opacity-50" />
           </motion.div>
 
           {/* Mission & Vision Content */}

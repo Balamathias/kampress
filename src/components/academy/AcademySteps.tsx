@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, FileSearch, List, Send, FileCheck, Plane } from "lucide-react";
+import { CheckCircle2, List, Send, FileCheck, Plane } from "lucide-react";
 
 const AcademySteps = () => {
   const steps = [
     { icon: CheckCircle2, text: "Attend our discover & inform program" },
     { icon: List, text: "Online Application" },
-    { icon: Send, text: "Scan & Forward documents to admissions@studyabroad24.com" },
-    { icon: FileCheck, text: "Confirm & Accept Invitation" },
+    { icon: Send, text: "Scan & Forward documents to kampressgps@gmail.com" },
+    { icon: FileCheck, text: "Receive & Accept admission offer" },
     { icon: CheckCircle2, text: "Visa Application" },
-    { icon: Plane, text: "Enrol & Travel" },
+    { icon: Plane, text: "Travel & Enrol" },
   ];
 
   return (

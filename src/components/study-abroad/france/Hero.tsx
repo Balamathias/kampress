@@ -14,7 +14,7 @@ export default function FRHero() {
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <motion.h1 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1]">
-              <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">Study and Work in France</span>
+              <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">Study in France</span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="mt-5 text-base sm:text-lg text-white/80 max-w-2xl">Experience world‑renowned education, culture, and diverse programmes taught in French and English across top cities like Paris, Lyon and Toulouse.</motion.p>
           </div>

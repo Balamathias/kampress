@@ -95,12 +95,12 @@ const WhoAreWe = () => {
               Introducing{" "}
               <span className="font-bold text-blue-900">Kampress Global Placement Services</span>; An
               educational service company handling{" "}
-              <span className="font-semibold text-orange-600">study and work placements</span> for
+              <span className="font-semibold text-orange-600">study placements</span> for
               international students with associated{" "}
               <span className="font-semibold text-orange-600">
                 capacity building and utilization
               </span>
-              ..
+              .
             </motion.p>
           </motion.div>
 

@@ -9,7 +9,7 @@ export default function Overview() {
       <div className="grid lg:grid-cols-3 gap-10 items-start">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="lg:col-span-1">
           <p className="uppercase tracking-widest text-white/60 text-sm">Did you know what it takes you to</p>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-orange-400">Study and Work in France as a Global Student?</h2>
+          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-orange-400">Study in France as a Global Student?</h2>
           <div className="mt-4 h-1 w-16 bg-emerald-500 rounded" />
         </motion.div>
 

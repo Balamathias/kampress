@@ -100,7 +100,7 @@ const MissionVisionCards = () => {
               We Help students discover abilities and personalities by using{" "}
               <span className="font-semibold text-green-700">cognitive, social and developmental psychology</span>{" "}
               as tool; then inform by getting them on same page using discovered evidences before we place them in the{" "}
-              <span className="font-semibold text-green-700">right college or university</span>
+              <span className="font-semibold text-green-700">right college or university</span>.
             </p>
 
             {/* Decorative corner */}
@@ -185,7 +185,7 @@ const MissionVisionCards = () => {
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed relative z-10">
               In our desire to identify and inculcate new ways to add value to our esteemed students both{" "}
               <span className="font-semibold text-blue-700">existing and prospective</span>, we have continued to
-              interact with students even after their settling down
+              interact with students even after their settling down.
             </p>
 
             {/* Decorative corner */}

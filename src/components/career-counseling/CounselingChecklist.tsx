@@ -26,7 +26,7 @@ const CounselingChecklist = () => {
     { icon: ClipboardCheck, text: "Assessments" },
     { icon: Zap, text: "Activities" },
     { icon: FolderOpen, text: "Uniquely Designed Projects" },
-    { icon: BookOpen, text: "Overview of study and work settings for international students" },
+    { icon: BookOpen, text: "Overview of study settings for international students" },
     { icon: Phone, text: "Call-to-Action" },
   ];
 
@@ -43,10 +43,10 @@ const CounselingChecklist = () => {
   const simpleSteps = [
     { icon: CheckCircle2, text: "Attend our discover & inform program" },
     { icon: List, text: "Online Application" },
-    { icon: Send, text: "Scan & Forward documents to admissions@studyabroad24.com" },
-    { icon: FileCheck, text: "Confirm & Accept Invitation" },
+    { icon: Send, text: "Scan & Forward documents to kampressgps@gmail.com" },
+    { icon: FileCheck, text: "Receive & Accept admission offer" },
     { icon: CheckCircle2, text: "Visa Application" },
-    { icon: Plane, text: "Enrol & Travel" },
+    { icon: Plane, text: "Travel & Enrol" },
   ];
 
   return (

@@ -58,7 +58,7 @@ const CountriesGrid = () => {
 
                     <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
                       <h3 className="text-white font-bold text-base sm:text-lg mb-2 drop-shadow-lg">
-                        Study & Work in {country.name}
+                        Study in {country.name}
                       </h3>
                       <div className="flex items-center justify-center gap-2 text-orange-300 font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity">
                         <span>Learn More</span>

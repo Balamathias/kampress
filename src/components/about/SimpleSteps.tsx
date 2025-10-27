@@ -19,12 +19,12 @@ const SimpleSteps = () => {
     },
     {
       icon: Send,
-      title: "Scan & Forward documents to admissions@studyabroad24.com",
+      title: "Scan & Forward documents to kampressgps@gmail.com",
       number: "03",
     },
     {
       icon: FileCheck,
-      title: "Confirm & Accept Invitation",
+      title: "Receive & Accept admission offer",
       number: "04",
     },
     {
@@ -34,7 +34,7 @@ const SimpleSteps = () => {
     },
     {
       icon: Plane,
-      title: "Enrol & Travel",
+      title: "Travel & Enrol",
       number: "06",
     },
   ];

@@ -10,7 +10,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "Meet Us-Abuja",
-      details: "Angel Plaza, Plot1234, Samuel Ladoke Akintola Boulevard Garki, Abuja, Nigeria",
+      details: "Angel Plaza, Plot 1243, Samuel Ladoke Akintola Boulevard Garki, Abuja, Nigeria",
       gradient: "from-blue-500 to-blue-600",
     },
     {
@@ -28,7 +28,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: "info@kampressgps.com",
+      details: "kampressgps@gmail.com",
       gradient: "from-green-500 to-green-600",
     },
   ];
@@ -156,9 +156,9 @@ const ContactSection = () => {
                 <Button
                   size="sm"
                   className="bg-white/90 backdrop-blur-sm hover:bg-white text-gray-700 shadow-md rounded-full text-xs"
-                  onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Angel+Plaza+Plot1234+Samuel+Ladoke+Akintola+Boulevard+Garki+Abuja+Nigeria", "_blank")}
+                  onClick={() => window.open("https://www.google.com/maps/dir/?api=1&destination=Angel+Plaza+Plot 1243+Samuel+Ladoke+Akintola+Boulevard+Garki+Abuja+Nigeria", "_blank")}
                 >
-                  View larger map
+                  Get Directions
                 </Button>
               </div>
               <div className="aspect-video w-full relative bg-gray-100">
@@ -194,9 +194,9 @@ const ContactSection = () => {
                 <Button
                   size="sm"
                   className="bg-white/90 backdrop-blur-sm hover:bg-white text-gray-700 shadow-md rounded-full text-xs"
-                  onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Suite+B11+Chrisvan+Petrol+Plaza+Summit+Road+Asaba+Delta+State", "_blank")}
+                  onClick={() => window.open("https://www.google.com/maps/dir/?api=1&destination=Suite+B11+Chrisvan+Petrol+Plaza+Summit+Road+Asaba+Delta+State", "_blank")}
                 >
-                  View larger map
+                  Get Directions
                 </Button>
               </div>
               <div className="aspect-video w-full relative bg-gray-100">

@@ -7,7 +7,7 @@ import WorkAndChecklist from "@/components/study-abroad/france/WorkAndChecklist"
 import FormSection from "@/components/study-abroad/france/FormSection";
 
 export const metadata = {
-  title: "Study & Work in France | Kampress Global Placement Services",
+  title: "Study in France | Kampress Global Placement Services",
   description:
     "Explore studying and working in France: overview, benefits, tuition ranges, universities, work rules, admission checklist, and how to get started.",
 };

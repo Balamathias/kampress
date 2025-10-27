@@ -7,7 +7,7 @@ import WorkAndChecklist from "@/components/study-abroad/netherlands/WorkAndCheck
 import FormSection from "@/components/study-abroad/netherlands/FormSection";
 
 export const metadata = {
-  title: "Study & Work in the Netherlands | Kampress Global Placement Services",
+  title: "Study in the Netherlands | Kampress Global Placement Services",
   description:
     "Discover English‑taught programmes, costs, universities, work rules, checklists and how to start your Netherlands study application.",
 };

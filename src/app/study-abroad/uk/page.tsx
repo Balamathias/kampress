@@ -7,7 +7,7 @@ import WorkAndChecklist from "@/components/study-abroad/uk/WorkAndChecklist";
 import FormSection from "@/components/study-abroad/uk/FormSection";
 
 export const metadata = {
-  title: "Study & Work in the United Kingdom | Kampress Global Placement Services",
+  title: "Study in the United Kingdom | Kampress Global Placement Services",
   description:
     "Explore studying and working in the UK: overview, benefits, tuition ranges, affordable universities, work rules, admission checklist, and how to get started.",
 };

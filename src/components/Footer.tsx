@@ -97,7 +97,7 @@ const Footer = () => {
                 </motion.div>
               </Link>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Making international education accessible. Your trusted partner for studying and abroad.
+                Making international education accessible. Your trusted partner for international student placement.
               </p>
 
               {/* Social Links - Vertical layout */}
@@ -208,7 +208,7 @@ const Footer = () => {
                   <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-medium text-white mb-1">Abuja Office</p>
-                    <p>Angel Plaza, Plot1234, Samuel Ladoke Akintola Boulevard Garki, Abuja, Nigeria</p>
+                    <p>Angel Plaza, Plot 1243, Samuel Ladoke Akintola Boulevard Garki, Abuja, Nigeria</p>
                   </div>
                 </motion.div>
 
@@ -228,7 +228,7 @@ const Footer = () => {
                   className="flex items-start gap-3 text-gray-300 text-sm"
                 >
                   <Mail className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                  <p className="break-all">info@kampressgps.com</p>
+                  <p className="break-all">kampressgps@gmail.com</p>
                 </motion.div>
               </div>
             </motion.div>

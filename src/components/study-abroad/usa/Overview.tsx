@@ -42,7 +42,7 @@ export default function Overview() {
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                Study and Work in the United States as a Global Student?
+                Study in the United States as a Global Student?
               </span>
             </h2>
           </motion.div>
@@ -67,7 +67,7 @@ export default function Overview() {
                 Overview
               </h3>
               <p className="text-gray-300 text-sm leading-relaxed text-justify">
-                The United States, christened the land of the free, with 50 States and over 325 million people is the third most populous country in the world. It is also the fourth largest country world over by total area and the largest economy in the world. Cultural stamps are driven by innovations that are powered by technology among others. United States of America is one of the most popular study abroad destinations where global students can study and work simultaneously.
+                The United States, christened the land of the free, with 50 States and over 325 million people is the third most populous country in the world. It is also the fourth largest country world over by total area and the largest economy in the world. Cultural stamps are driven by innovations that are powered by technology among others. United States of America is one of the most popular study abroad destinations where global students can study.
               </p>
             </motion.div>
 

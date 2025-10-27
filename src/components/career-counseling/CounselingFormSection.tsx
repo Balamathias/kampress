@@ -112,10 +112,10 @@ const CounselingFormSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="space-y-6"
           >
-            {/* Study & Work Abroad Section */}
+            {/* Study Abroad Section */}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <h3 className="text-lg font-bold text-white mb-4 text-center">
-                Study & Work Abroad-Country Check List Undergraduate and Post Graduate Courses
+                Study Abroad-Country Check List Undergraduate and Post Graduate Courses
               </h3>
 
               <ul className="space-y-2">

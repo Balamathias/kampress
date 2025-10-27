@@ -7,7 +7,7 @@ import WorkAndChecklist from "@/components/study-abroad/canada/WorkAndChecklist"
 import FormSection from "@/components/study-abroad/canada/FormSection";
 
 export const metadata = {
-  title: "Study & Work in Canada | Kampress Global Placement Services",
+  title: "Study in Canada | Kampress Global Placement Services",
   description:
     "Everything you need to know about studying and working in Canada: overview, benefits, tuition ranges, affordable universities, work rules, and how to get started.",
 };

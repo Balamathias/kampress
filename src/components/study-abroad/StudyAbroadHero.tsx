@@ -49,7 +49,7 @@ const StudyAbroadHero = () => {
             transition={{ delay: 0.3 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            <span className="block text-white mb-2">Study & Work Abroad in</span>
+            <span className="block text-white mb-2">Study Abroad in</span>
             <span className="block bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400 bg-clip-text text-transparent animate-gradient">
               Selected Countries
             </span>

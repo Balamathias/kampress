@@ -80,7 +80,7 @@ const CountriesSection = () => {
             transition={{ delay: 0.4 }}
             className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto"
           >
-            Explore study and work opportunities in these amazing destinations
+            Explore study in these amazing destinations
           </motion.p>
         </motion.div>
 

@@ -91,13 +91,13 @@ const OverviewSection = () => {
                 even out challenges associated with{" "}
                 <span className="font-semibold text-blue-900">student placements and visas</span> in selected
                 countries around the globe; with our{" "}
-                <span className="font-semibold text-blue-900">happiness tied to each student's satisfaction</span>.
+                <span className="font-semibold text-blue-900">happiness tied to each student's satisfaction.</span>.
               </p>
 
               <p>
                 You can check{" "}
                 <span className="font-semibold text-orange-600">requirements and documentations</span> necessary for
-                one to study and work in{" "}
+                one to study in{" "}
                 <span className="inline-flex flex-wrap gap-1">
                   {countries.map((country, index) => (
                     <span key={country.name}>
@@ -111,7 +111,7 @@ const OverviewSection = () => {
                     </span>
                   ))}
                 </span>{" "}
-                for either undergraduate or post-graduate program.
+                for either undergraduate or Postgraduate program.
               </p>
             </motion.div>
 

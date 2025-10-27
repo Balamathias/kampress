@@ -20,7 +20,7 @@ export default function NLHero() {
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1]"
             >
               <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-                Study and Work in the Netherlands
+                Study the Netherlands
               </span>
             </motion.h1>
             <motion.p

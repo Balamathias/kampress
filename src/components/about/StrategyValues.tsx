@@ -6,24 +6,24 @@ import { Heart, Star, Shield, Zap } from "lucide-react";
 const StrategyValues = () => {
   const values = [
     {
-      icon: Star,
-      title: "Uniquely Creative",
-      gradient: "from-purple-500 to-pink-500",
-    },
-    {
-      icon: Heart,
-      title: "Understanding, Compassionate and warm",
-      gradient: "from-red-500 to-rose-500",
+      icon: Shield,
+      title: "Integrity",
+      gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Zap,
-      title: "Exceedingly domestic with attention to details",
+      title: "Attention to details",
       gradient: "from-orange-500 to-orange-500",
     },
     {
-      icon: Shield,
+      icon: Heart,
       title: "Collaborative",
-      gradient: "from-blue-500 to-cyan-500",
+      gradient: "from-red-500 to-rose-500",
+    },
+    {
+      icon: Star,
+      title: "Unique Creativity",
+      gradient: "from-purple-500 to-pink-500",
     },
   ];
 

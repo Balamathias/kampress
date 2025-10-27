@@ -17,7 +17,7 @@ export default function Overview() {
             Did you know what it takes you to
           </p>
           <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-orange-400">
-            Study and Work in the United Kingdom as a Global Student?
+            Study in the United Kingdom as a Global Student?
           </h2>
           <div className="mt-4 h-1 w-16 bg-emerald-500 rounded" />
         </motion.div>

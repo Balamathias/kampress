@@ -26,7 +26,7 @@ const ServicesDashboard = () => {
     {
       icon: User,
       title: "Career Counseling",
-      description: "Setting is advisory. For Undergraduate, Post-graduate and Boot camp/Certification Course",
+      description: "Setting is advisory. For Undergraduate, Postgraduate and Boot camp/Certification Course.",
       gradient: "from-blue-500 to-cyan-500",
       borderColor: "border-blue-500",
       link: "/career-counseling",
@@ -34,15 +34,15 @@ const ServicesDashboard = () => {
     {
       icon: Building2,
       title: "Undergraduate School Placement",
-      description: "We work directly with institutions or accredited international partners",
+      description: "We work directly with institutions or accredited international partners.",
       gradient: "from-purple-500 to-pink-500",
       borderColor: "border-purple-500",
       link: "/study-abroad",
     },
     {
       icon: GraduationCap,
-      title: "Post-graduate School Placement",
-      description: "We work directly with institutions or accredited international partners",
+      title: "Postgraduate School Placement",
+      description: "We work directly with institutions or accredited international partners.",
       gradient: "from-orange-500 to-red-500",
       borderColor: "border-orange-500",
       link: "/study-abroad",
@@ -50,7 +50,7 @@ const ServicesDashboard = () => {
     {
       icon: FileCheck,
       title: "Visa and Accommodation Guide",
-      description: "Setting is professional guide designed to help you succeed",
+      description: "Setting is professional guide designed to help you succeed.",
       gradient: "from-green-500 to-emerald-500",
       borderColor: "border-green-500",
       link: "/career-counseling",
@@ -58,7 +58,7 @@ const ServicesDashboard = () => {
     {
       icon: School,
       title: "Placement for Boot camp & Pro Certification Programs",
-      description: "We work directly with institutions or accredited international partners",
+      description: "We work directly with institutions or accredited international partners.",
       gradient: "from-orange-500 to-orange-500",
       borderColor: "border-orange-500",
       link: "/academy",
@@ -66,7 +66,7 @@ const ServicesDashboard = () => {
     {
       icon: Award,
       title: "Kampress Academy",
-      description: "Learning program designed to help you succeed",
+      description: "Learning program designed to help you succeed.",
       gradient: "from-indigo-500 to-purple-500",
       borderColor: "border-indigo-500",
       link: "/academy",

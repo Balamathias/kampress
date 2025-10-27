@@ -94,7 +94,7 @@ const PartnerUniversities = () => {
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
-            <span className="text-gray-800">Some Partnering</span>
+            <span className="text-gray-800">Partner</span>
             <br />
             <span className="bg-gradient-to-r from-orange-600 via-orange-500 to-orange-500 bg-clip-text text-transparent">
               Universities & Institutions
@@ -146,7 +146,7 @@ const PartnerUniversities = () => {
                       src={university.logo}
                       alt={university.name}
                       fill
-                      className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                      className="object-contain filter grayscale-0 group-hover:grayscale-0 transition-all duration-300"
                       sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
                     />
                   </div>

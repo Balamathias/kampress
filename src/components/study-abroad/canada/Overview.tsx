@@ -17,7 +17,7 @@ export default function Overview() {
             Did you know what it takes you to
           </p>
           <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-orange-400">
-            Study and Work in Canada as a Global Student?
+            Study in Canada as a Global Student?
           </h2>
           <div className="mt-4 h-1 w-16 bg-emerald-500 rounded" />
         </motion.div>
@@ -30,7 +30,7 @@ export default function Overview() {
           className="space-y-4"
         >
           <div className="relative w-36 h-28 mx-auto lg:mx-0">
-            <Image src="/images/partner-universities/queen-mary.png" alt="Canada map" fill className="object-contain" />
+            <Image src="/images/hero-bg-slides/slide-3.png" alt="Canada map" fill className="object-contain" />
           </div>
           <h3 className="text-center lg:text-left text-lg font-semibold">Overview</h3>
           <p className="text-white/85 leading-relaxed">

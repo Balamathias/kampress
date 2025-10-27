@@ -67,7 +67,7 @@ const AboutHero = () => {
           >
             <span className="block text-white mb-2">About</span>
             <span className="block bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400 bg-clip-text text-transparent animate-gradient">
-              Kampress Global Placement Service
+              Kampress Global Placement Service.
             </span>
           </motion.h1>
 
@@ -78,7 +78,7 @@ const AboutHero = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-lg sm:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto"
           >
-            Empowering students worldwide to achieve their dreams of international education through personalized guidance and unwavering support
+            Empowering students worldwide to achieve their dreams of international education through personalized guidance and unwavering support.
           </motion.p>
 
           {/* Decorative line */}

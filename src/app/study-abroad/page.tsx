@@ -4,8 +4,8 @@ import StudyAbroadBenefits from "@/components/study-abroad/StudyAbroadBenefits";
 import ApplicationProcess from "@/components/study-abroad/ApplicationProcess";
 
 export const metadata = {
-  title: "Study & Work Abroad | Kampress Global Placement Services",
-  description: "Explore study and work opportunities in Canada, United States, United Kingdom, Netherlands, France, Australia, Ireland, Barbados, Ghana, and Mauritius.",
+  title: "Study Abroad | Kampress Global Placement Services",
+  description: "Explore study opportunities in Canada, United States, United Kingdom, Netherlands, France, Australia, Ireland, Barbados, Ghana, and Mauritius.",
 };
 
 export default function StudyAbroadPage() {

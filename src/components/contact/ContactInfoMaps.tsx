@@ -9,7 +9,7 @@ const ContactInfoMaps = () => {
     {
       icon: MapPin,
       title: "Meet Us-Abuja",
-      details: "SUITE 314A DBM PLAZA NOUAKCHOTT STREET WUSE ZONE 1 ABUJA FCT",
+      details: "Angel Plaza, Plot 1243, Samuel Ladoke Akintola Boulevard Garki, Abuja, Nigeria",
       gradient: "from-blue-500 to-blue-600",
       mapUrl: "https://www.google.com/maps/search/?api=1&query=SUITE+314A+DBM+PLAZA+NOUAKCHOTT+STREET+WUSE+ZONE+1+ABUJA+FCT",
     },
@@ -29,7 +29,7 @@ const ContactInfoMaps = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: "info@kampressgps.com",
+      details: "kampressgps@gmail.com",
       gradient: "from-green-500 to-green-600",
     },
   ];

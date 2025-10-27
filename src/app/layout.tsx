@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Kampress Global Placement Services",
-  description: "Welcome to Kampress Global Placement Services. We make studying and working abroad easy. Study and work in Canada, United States, United Kingdom, Netherlands, France, Australia, Ireland, Barbados, Ghana and Mauritius.",
+  description: "Welcome to Kampress Global Placement Services. We make studying abroad easy. Study in Canada, United States, United Kingdom, Netherlands, France, Australia, Ireland, Barbados, Ghana and Mauritius.",
 };
 
 export default function RootLayout({
