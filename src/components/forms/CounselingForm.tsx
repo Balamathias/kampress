@@ -63,41 +63,85 @@ const CounselingForm = ({ onSubmit, className = "" }: CounselingFormProps) => {
     },
   });
 
+
+
+
+
   const handleSubmit = async (data: CounselingFormData) => {
-    // Validate email match
-    if (data.email !== data.confirmEmail) {
-      form.setError("confirmEmail", {
-        type: "manual",
-        message: "Emails do not match",
-      });
-      return;
+  if (data.email !== data.confirmEmail) {
+    form.setError("confirmEmail", {
+      type: "manual",
+      message: "Emails do not match",
+    });
+    return;
+  }
+
+  setIsSubmitting(true);
+
+  try {
+    const res = await fetch("/api/application-form", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (!res.ok) {
+      const result = await res.json();
+      throw new Error(result.error || "Failed to send email");
     }
 
-    setIsSubmitting(true);
+    setIsSuccess(true);
+    // form.reset();
 
-    try {
-      // Call custom onSubmit if provided
-      if (onSubmit) {
-        await onSubmit(data);
-      } else {
-        // Default: Log to console (replace with API call later)
-        console.log("Form Data:", data);
+    setTimeout(() => setIsSuccess(false), 5000);
+  } catch (error) {
+    console.error("Form submission error:", error);
+    form.setError("fullName", {
+      type: "manual",
+      message:
+        "Failed to submit form. Please try again or contact info@kampressgps.com",
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-      }
 
-      setIsSuccess(true);
-      form.reset();
+  // const handleSubmit = async (data: CounselingFormData) => {
+  //   // Validate email match
+  //   if (data.email !== data.confirmEmail) {
+  //     form.setError("confirmEmail", {
+  //       type: "manual",
+  //       message: "Emails do not match",
+  //     });
+  //     return;
+  //   }
 
-      // Reset success message after 5 seconds
-      setTimeout(() => setIsSuccess(false), 5000);
-    } catch (error) {
-      console.error("Form submission error:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  //   setIsSubmitting(true);
+
+  //   try {
+  //     // Call custom onSubmit if provided
+  //     if (onSubmit) {
+  //       await onSubmit(data);
+  //     } else {
+  //       // Default: Log to console (replace with API call later)
+  //       console.log("Form Data:", data);
+
+  //       // Simulate API call
+  //       await new Promise((resolve) => setTimeout(resolve, 2000));
+  //     }
+
+  //     setIsSuccess(true);
+  //     form.reset();
+
+  //     // Reset success message after 5 seconds
+  //     setTimeout(() => setIsSuccess(false), 5000);
+  //   } catch (error) {
+  //     console.error("Form submission error:", error);
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
 
   return (
     <div className={`w-full ${className}`}>

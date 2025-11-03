@@ -132,7 +132,7 @@ const ContactFormSection = () => {
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <Label htmlFor="name">Full name <span className="text-red-500">*</span></Label>
+                <Label htmlFor="name">Full name <span className="text-red-500 my-2">*</span></Label>
                 <Input
                   id="name"
                   name="name"
@@ -144,7 +144,7 @@ const ContactFormSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="email">Email address <span className="text-red-500">*</span></Label>
+                <Label htmlFor="email">Email address <span className="text-red-500 my-2">*</span></Label>
                 <Input
                   id="email"
                   name="email"
@@ -157,7 +157,7 @@ const ContactFormSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="subject">Subject <span className="text-red-500">*</span></Label>
+                <Label htmlFor="subject">Subject <span className="text-red-500 my-2">*</span></Label>
                 <Input
                   id="subject"
                   name="subject"
@@ -169,7 +169,7 @@ const ContactFormSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="message">Your message <span className="text-red-500">*</span></Label>
+                <Label htmlFor="message">Your message <span className="text-red-500 my-2">*</span></Label>
                 <Textarea
                   id="message"
                   name="message"

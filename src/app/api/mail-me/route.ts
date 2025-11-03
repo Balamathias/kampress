@@ -4,8 +4,6 @@ import nodemailer from 'nodemailer';
 const EMAIL_USER = "info@kampressgps.com";
 const EMAIL_PASS = "Info2025";
 
-// const EMAIL_USER = process.env.EMAIL_USER || "balaladalo@gmail.com";
-// const EMAIL_PASS = process.env.EMAIL_PASS || "vdci adoi bjtd aclo";
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,16 +18,6 @@ export async function POST(request: NextRequest) {
     if (!emailRegex.test(email)) {
       return NextResponse.json({ error: 'Invalid email format' }, { status: 400 });
     }
-
-    // const transporter = nodemailer.createTransport({
-    //   service: 'gmail',
-    //   auth: {
-    //     user: EMAIL_USER,
-    //     pass: EMAIL_PASS,
-    //   },
-    // });
-
-
 
     const transporter = nodemailer.createTransport({
       host: "da22.host-ww.net", // replace with your actual domain
@@ -51,7 +39,7 @@ export async function POST(request: NextRequest) {
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #667eea; border-bottom: 2px solid #667eea; padding-bottom: 10px;">
-            New Web Contact Message
+            ${subject}
           </h2>
           <div style="background-color: #f8fafc; padding: 20px; border-radius: 10px; margin: 20px 0;">
             <h3 style="color: #1e293b; margin-top: 0;">Contact Information</h3>

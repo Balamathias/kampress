@@ -29,7 +29,7 @@ const ContactInfoMaps = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: "kampressgps@gmail.com",
+      details: "info@kampressgps.com",
       gradient: "from-green-500 to-green-600",
     },
   ];
