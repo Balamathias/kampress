@@ -313,7 +313,7 @@ const CounselingForm = ({ onSubmit, className = "" }: CounselingFormProps) => {
                   </FormLabel>
                   <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
-                      <SelectTrigger className="bg-white border-gray-300 text-gray-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 h-12 text-base">
+                      <SelectTrigger className="bg-white w-full border-gray-300 text-gray-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 h-12 text-base">
                         <SelectValue placeholder="Select" />
                       </SelectTrigger>
                     </FormControl>
@@ -348,7 +348,7 @@ const CounselingForm = ({ onSubmit, className = "" }: CounselingFormProps) => {
                   </FormLabel>
                   <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
-                      <SelectTrigger className="bg-white border-gray-300 text-gray-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 h-12 text-base">
+                      <SelectTrigger className="bg-white w-full border-gray-300 text-gray-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 h-12 text-base">
                         <SelectValue placeholder="Less than 18" />
                       </SelectTrigger>
                     </FormControl>
@@ -384,7 +384,7 @@ const CounselingForm = ({ onSubmit, className = "" }: CounselingFormProps) => {
                   </FormLabel>
                   <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
-                      <SelectTrigger className="bg-white border-gray-300 text-gray-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 h-12 text-base">
+                      <SelectTrigger className="bg-white w-full border-gray-300 text-gray-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 h-12 text-base">
                         <SelectValue placeholder="Select" />
                       </SelectTrigger>
                     </FormControl>
@@ -418,7 +418,7 @@ const CounselingForm = ({ onSubmit, className = "" }: CounselingFormProps) => {
                   </FormLabel>
                   <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
-                      <SelectTrigger className="bg-white border-gray-300 text-gray-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 h-12 text-base">
+                      <SelectTrigger className="bg-white w-full border-gray-300 text-gray-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 h-12 text-base">
                         <SelectValue placeholder="Select" />
                       </SelectTrigger>
                     </FormControl>
@@ -506,7 +506,7 @@ const CounselingForm = ({ onSubmit, className = "" }: CounselingFormProps) => {
               type="submit"
               disabled={isSubmitting || isSuccess}
               size="lg"
-              className="w-full sm:w-auto rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-10 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full sm:w-aut rounded-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 text-white px-10 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {isSubmitting ? (
                 <>
