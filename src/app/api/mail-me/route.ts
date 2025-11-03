@@ -32,7 +32,8 @@ export async function POST(request: NextRequest) {
 
 
     const transporter = nodemailer.createTransport({
-      host: "mail.kampressgps.com", // replace with your actual domain
+      host: "da22.host-ww.net", // replace with your actual domain
+      // host: "mail.kampressgps.com", // replace with your actual domain
       port: 465, // use 465 for SSL or 587 for TLS
       secure: true, // true for port 465, false for port 587
       auth: {
