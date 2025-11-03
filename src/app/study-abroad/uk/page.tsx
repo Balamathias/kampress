@@ -16,6 +16,7 @@ export default function UKPage() {
   return (
     <main className="min-h-screen bg-[#041B4E] text-white">
       <UKHero />
+      <FormSection />
       <Overview />
       <WhyUK />
       <CostsAndTuition />

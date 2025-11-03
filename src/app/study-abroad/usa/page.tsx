@@ -32,12 +32,13 @@ export default function StudyInUSAPage() {
   return (
     <main className="min-h-screen">
       <Hero />
+      <FormSection />
       <Overview />
       <WhyUSA />
-      <Universities />
-      <CostsAndTuition />
-      <WorkAndChecklist />
       <FormSection />
+      {/* <Universities />
+      <CostsAndTuition />
+      <WorkAndChecklist /> */}
     </main>
   );
 }

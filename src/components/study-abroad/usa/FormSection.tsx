@@ -5,7 +5,7 @@ import CounselingForm from "@/components/forms/CounselingForm";
 
 export default function FormSection() {
   return (
-    <section className="relative py-16 sm:py-20">
+    <section className="relative py-16 sm:py-20 overflow-hidden bg-gradient-to-b from-blue-900 via-purple-900 to-gray-900">
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 h-40 w-[90%] max-w-5xl bg-gradient-to-r from-orange-500/10 via-orange-600/10 to-orange-700/10 blur-3xl rounded-full" />
       </div>
@@ -16,7 +16,7 @@ export default function FormSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-extrabold">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
               Ready to begin your U.S. journey?
             </h2>
             <p className="mt-3 text-white/85 max-w-xl">

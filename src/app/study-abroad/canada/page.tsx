@@ -16,6 +16,7 @@ export default function CanadaPage() {
   return (
     <main className="min-h-screen bg-[#041B4E] text-white">
       <CanadaHero />
+      <FormSection />
       <Overview />
       <WhyCanada />
       <CostsAndTuition />
