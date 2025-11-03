@@ -91,7 +91,7 @@ const CounselingForm = ({ onSubmit, className = "" }: CounselingFormProps) => {
     }
 
     setIsSuccess(true);
-    // form.reset();
+    form.reset();
 
     setTimeout(() => setIsSuccess(false), 5000);
   } catch (error) {
