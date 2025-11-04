@@ -4,62 +4,63 @@ import { motion } from "framer-motion";
 import { Quote, Star } from "lucide-react";
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "Chukwuemeka Okafor",
-      initials: "CO",
-      role: "Student, University of Birmingham",
-      location: "Lagos, Nigeria",
-      rating: 5,
-      text: "Kampress made my dream of studying in the UK a reality. Their guidance through the visa process was exceptional, and the team was always available to answer my questions. I couldn't have done it without them!",
-      gradient: "from-blue-500 to-blue-600",
-    },
-    {
-      name: "Adaeze Nwosu",
-      initials: "AN",
-      role: "Graduate Student, University of Toronto",
-      location: "Abuja, Nigeria",
-      rating: 5,
-      text: "From application to arrival in Canada, Kampress Global Placement Services provided outstanding support. Their attention to detail and personalized approach made the entire process smooth and stress-free.",
-      gradient: "from-purple-500 to-purple-600",
-    },
-    {
-      name: "Oluwaseun Adebayo",
-      initials: "OA",
-      role: "MBA Student, Harvard University",
-      location: "Port Harcourt, Nigeria",
-      rating: 5,
-      text: "I highly recommend Kampress! They helped me secure admission to my dream school in the USA. The career counseling sessions were invaluable in helping me choose the right program for my goals.",
-      gradient: "from-orange-500 to-orange-600",
-    },
-    {
-      name: "Ngozi Okoro",
-      initials: "NO",
-      role: "Undergraduate, University of Manchester",
-      location: "Enugu, Nigeria",
-      rating: 5,
-      text: "The professionalism and expertise of the Kampress team are unmatched. They guided me through every step, from choosing the right university to securing my student visa. Thank you for making my dreams come true!",
-      gradient: "from-green-500 to-green-600",
-    },
-    {
-      name: "Ibrahim Yusuf",
-      initials: "IY",
-      role: "Masters Student, University of Melbourne",
-      location: "Kano, Nigeria",
-      rating: 5,
-      text: "Kampress exceeded my expectations in every way. Their knowledge of international education systems and visa requirements is impressive. I'm now studying in Australia thanks to their excellent service!",
-      gradient: "from-teal-500 to-teal-600",
-    },
-    {
-      name: "Chiamaka Eze",
-      initials: "CE",
-      role: "PhD Candidate, University of Oxford",
-      location: "Asaba, Nigeria",
-      rating: 5,
-      text: "Working with Kampress was the best decision I made. They not only helped me get into Oxford but also provided invaluable advice on scholarships and funding. Their support continued even after I arrived in the UK!",
-      gradient: "from-pink-500 to-pink-600",
-    },
-  ];
+ const testimonials = [
+  {
+    name: "Chukwuemeka Okafor",
+    initials: "CO",
+    role: "Student, University of Birmingham",
+    location: "Birmingham, United Kingdom",
+    rating: 5,
+    text: "Kampress made my dream of studying in the UK a reality. Their guidance through the visa process was exceptional, and the team was always available to answer my questions. I couldn't have done it without them!",
+    gradient: "from-blue-500 to-blue-600",
+  },
+  {
+    name: "Adaeze Nwosu",
+    initials: "AN",
+    role: "Graduate Student, University of Toronto",
+    location: "Toronto, Canada",
+    rating: 5,
+    text: "From application to arrival in Canada, Kampress Global Placement Services provided outstanding support. Their attention to detail and personalized approach made the entire process smooth and stress-free.",
+    gradient: "from-purple-500 to-purple-600",
+  },
+  {
+    name: "Oluwaseun Adebayo",
+    initials: "OA",
+    role: "MBA Student, Harvard University",
+    location: "Cambridge, Massachusetts, USA",
+    rating: 5,
+    text: "I highly recommend Kampress! They helped me secure admission to my dream school in the USA. The career counseling sessions were invaluable in helping me choose the right program for my goals.",
+    gradient: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Ngozi Okoro",
+    initials: "NO",
+    role: "Undergraduate, University of Manchester",
+    location: "Manchester, United Kingdom",
+    rating: 5,
+    text: "The professionalism and expertise of the Kampress team are unmatched. They guided me through every step, from choosing the right university to securing my student visa. Thank you for making my dreams come true!",
+    gradient: "from-green-500 to-green-600",
+  },
+  {
+    name: "Ibrahim Yusuf",
+    initials: "IY",
+    role: "Masters Student, University of Melbourne",
+    location: "Melbourne, Australia",
+    rating: 5,
+    text: "Kampress exceeded my expectations in every way. Their knowledge of international education systems and visa requirements is impressive. I'm now studying in Australia thanks to their excellent service!",
+    gradient: "from-teal-500 to-teal-600",
+  },
+  {
+    name: "Chiamaka Eze",
+    initials: "CE",
+    role: "PhD Candidate, University of Oxford",
+    location: "Oxford, United Kingdom",
+    rating: 5,
+    text: "Working with Kampress was the best decision I made. They not only helped me get into Oxford but also provided invaluable advice on scholarships and funding. Their support continued even after I arrived in the UK!",
+    gradient: "from-pink-500 to-pink-600",
+  },
+];
+
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-gray-50 via-white to-orange-50/30 overflow-hidden">
