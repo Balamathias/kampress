@@ -14,6 +14,7 @@ export default function AboutPage() {
       <MissionVisionCards />
       <StrategyValues />
       <SimpleSteps />
+      <GetStartedFormSection />
     </main>
   );
 }
