@@ -16,7 +16,7 @@ export default function WorkAndChecklist() {
             How many hours can international students work?
           </h3>
           <p className="mt-4 text-white/85 leading-relaxed">
-            You can work up to <span className="font-semibold text-orange-300">20 hours per week</span> during study periods. Working more than 20 hours per week may violate your study permit conditions and affect your status. Always verify the latest rules on the Government of Canada website.
+            You can work up to <span className="font-semibold text-orange-300">24 hours per week</span> during study periods. Working more than 20 hours per week may violate your study permit conditions and affect your status. Always verify the latest rules on the Government of Canada website.
           </p>
         </motion.div>
 
@@ -31,7 +31,7 @@ export default function WorkAndChecklist() {
             Canadian international student checklist
           </h3>
           <ul className="mt-4 list-disc pl-5 space-y-2 text-white/85">
-            <li>Submit admissions and obtain study permit</li>
+            <li> Contact Kampress Global Placement Services to submit your application and obtain study permit</li>
             <li>Schedule advising appointment</li>
             <li>Understand immigration and work regulations</li>
             <li>Explore scholarships, grants and provincial aid</li>

@@ -17,7 +17,7 @@ export default function CostsAndTuition() {
           </h3>
           <p className="mt-4 text-white/85 leading-relaxed">
             Tuition for government‑owned universities averages between
-            <span className="font-semibold text-orange-300"> 7,500 – 22,500 CAD</span>
+            <span className="font-semibold text-orange-300"> 15,000 – 50,000 CAD</span> {" "}
             per year. Private universities are typically higher. Degrees earned in Canada are globally accepted. Students from non‑English speaking countries may need to prove proficiency through TOEFL® or IELTS™.
           </p>
           <div className="mt-6 h-1 w-20 bg-emerald-500 rounded" />

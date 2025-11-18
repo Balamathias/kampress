@@ -44,8 +44,8 @@ const MissionVisionSection = () => {
 
             <div className="relative">
               <VideoPlayer
-                src="/videos/kampress_placement_welcome_vid.mp4"
-                className="w-full aspect-video rounded-2xl"
+                src="/videos/welcome-video-2.mp4"
+                className="w-full h-[850px] rounded-2xl"
                 loop
               />
             </div>
@@ -108,11 +108,9 @@ const MissionVisionSection = () => {
                 </span>
               </h3>
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                Using{" "}
-                <span className="font-semibold text-orange-600">science</span>, we help{" "}
-                <span className="font-semibold text-orange-600">students discover abilities, personalities</span>;
-                then inform by getting them on same page using these evidences before we place them in the{" "}
-                <span className="font-semibold text-orange-600">right college, or university</span>.
+               
+                <span className="font-semibold text-gray-600">To transform lives by connecting students with exceptional education opportunities. </span>
+        
               </p>
             </motion.div>
 
@@ -134,12 +132,9 @@ const MissionVisionSection = () => {
                 </span>
               </h3>
               <p className="text-white/90 text-base sm:text-lg leading-relaxed">
-                To be the{" "}
-                <span className="font-semibold text-orange-300">world's leading global placement service</span>,
-                empowering students to achieve their{" "}
-                <span className="font-semibold text-orange-300">dreams of international education</span> and{" "}
-                <span className="font-semibold text-orange-300">career success</span> through personalized,
-                science-backed guidance.
+               
+                <span className="font-semibold text-white">We provide personalized and evidence based placement services to ensure students achieve success in institutions that align with their aspirations and potentials.</span>
+               
               </p>
             </motion.div>
 

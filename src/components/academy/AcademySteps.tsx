@@ -7,7 +7,7 @@ const AcademySteps = () => {
   const steps = [
     { icon: CheckCircle2, text: "Attend our discover & inform program" },
     { icon: List, text: "Online Application" },
-    { icon: Send, text: "Scan & Forward documents to kampressgps@gmail.com" },
+    { icon: Send, text: "Scan & Forward documents to info@kampressgps.com" },
     { icon: FileCheck, text: "Receive & Accept admission offer" },
     { icon: CheckCircle2, text: "Visa Application" },
     { icon: Plane, text: "Travel & Enrol" },

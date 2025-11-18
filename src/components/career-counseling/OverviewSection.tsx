@@ -141,8 +141,8 @@ const OverviewSection = () => {
 
             <div className="relative">
               <VideoPlayer
-                src="/videos/kampress_placement_welcome_vid.mp4"
-                className="w-full aspect-video rounded-2xl"
+                src="/videos/welcome-video-2.mp4"
+                className="w-full h-[850px] rounded-2xl"
                 loop
               />
             </div>

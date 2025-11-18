@@ -20,7 +20,7 @@ export default function WorkAndChecklist() {
             </h3>
           </div>
           <p className="text-white/85 leading-relaxed">
-            International students in the UK can typically work up to 20 hours per week during term time and full‑time during holidays. The Graduate Route allows eligible graduates to stay and work in the UK for up to two years after completing their degree.
+            International students in the UK can typically work up to 20 hours per week during term time and full‑time during holidays. The Graduate Route allows eligible graduates to stay and work in the UK for up to 18 months after completing their degree.
           </p>
         </motion.div>
 
@@ -37,14 +37,17 @@ export default function WorkAndChecklist() {
               UK International Student Admission Checklist
             </h3>
           </div>
-          <ol className="list-decimal list-inside text-white/85 space-y-2">
+          <p className="list-decimal list-inside text-white/85 space-y-2">
+           Contact Kampress Global Placement Services today for a free counselling session
+          </p>
+          {/* <ol className="list-decimal list-inside text-white/85 space-y-2">
             <li>Create your UCAS application.</li>
             <li>Apply to up to five programmes at one or different universities.</li>
             <li>Complete personal information.</li>
             <li>Include previous educational qualifications.</li>
             <li>Add financial information.</li>
             <li>Write a personal statement.</li>
-          </ol>
+          </ol> */}
         </motion.div>
 
         <motion.div
@@ -59,9 +62,9 @@ export default function WorkAndChecklist() {
             <h3 className="font-semibold text-lg">UK University Supporting Documents</h3>
           </div>
           <ul className="list-disc list-inside text-white/85 space-y-2">
-            <li>Copy of passport/visa (if available)</li>
-            <li>Academic transcript and certificate of graduation</li>
-            <li>Certificate of English proficiency (IELTS/TOEFL/PTE/Other)</li>
+            <li>Data page of passport </li>
+            <li>Academic Transcript and certificate</li>
+            {/* <li>Certificate of English proficiency (IELTS/TOEFL/PTE/Other)</li> */}
             <li>Personal statement</li>
             <li>Reference letters</li>
             <li>CV (if applicable)</li>

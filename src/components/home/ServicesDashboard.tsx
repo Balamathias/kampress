@@ -33,7 +33,7 @@ const ServicesDashboard = () => {
     },
     {
       icon: Building2,
-      title: "Undergraduate School Placement",
+      title: "School & University Placements",
       description: "We work directly with institutions or accredited international partners.",
       gradient: "from-purple-500 to-pink-500",
       borderColor: "border-purple-500",
@@ -41,7 +41,7 @@ const ServicesDashboard = () => {
     },
     {
       icon: GraduationCap,
-      title: "Postgraduate School Placement",
+      title: "Academic Guidance, Admission and Transition Support Package.",
       description: "We work directly with institutions or accredited international partners.",
       gradient: "from-orange-500 to-red-500",
       borderColor: "border-orange-500",
@@ -57,7 +57,7 @@ const ServicesDashboard = () => {
     },
     {
       icon: School,
-      title: "Placement for Boot camp & Pro Certification Programs",
+      title: "Educational Consultancy and Corporate Training",
       description: "We work directly with institutions or accredited international partners.",
       gradient: "from-orange-500 to-orange-500",
       borderColor: "border-orange-500",

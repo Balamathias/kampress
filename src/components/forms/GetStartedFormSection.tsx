@@ -46,7 +46,7 @@ const GetStartedFormSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/images/hero-bg-slides/slide-4.png"
+                  src="/images/hero-bg-slides/slide-8.jpg"
                   alt="Kampress Academy"
                   fill
                   className="object-cover"

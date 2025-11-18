@@ -19,7 +19,7 @@ const SimpleSteps = () => {
     },
     {
       icon: Send,
-      title: "Scan & Forward documents to kampressgps@gmail.com",
+      title: "Scan & Forward documents to info@kampressgps.com",
       number: "03",
     },
     {

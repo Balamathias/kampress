@@ -181,7 +181,7 @@ const VideoPlayer = ({
       />
 
       {/* Loading Spinner */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isLoading && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -192,7 +192,7 @@ const VideoPlayer = ({
             <Loader2 className="w-12 h-12 text-orange-500 animate-spin" />
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       {/* Play/Pause Overlay */}
       <AnimatePresence>
