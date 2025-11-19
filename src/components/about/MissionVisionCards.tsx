@@ -97,10 +97,8 @@ const MissionVisionCards = () => {
 
             {/* Content */}
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed relative z-10">
-              We Help students discover abilities and personalities by using{" "}
-              <span className="font-semibold text-green-700">cognitive, social and developmental psychology</span>{" "}
-              as tool; then inform by getting them on same page using discovered evidences before we place them in the{" "}
-              <span className="font-semibold text-green-700">right college or university</span>.
+              To transform lives by connecting students with exceptional education opportunities.{" "}
+              <span className="font-semibold text-green-700">             We provide personalized and evidence based placement services to ensure students achieve success in institutions that align with their aspirations and potentials.</span>.
             </p>
 
             {/* Decorative corner */}
