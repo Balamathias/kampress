@@ -19,7 +19,7 @@ export default function FRPage() {
       <Overview />
       <WhyFR />
       <CostsAndTuition />
-      <Universities />
+      {/* <Universities /> */}
       <WorkAndChecklist />
       <FormSection />
     </main>

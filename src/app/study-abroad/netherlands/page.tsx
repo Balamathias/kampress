@@ -19,7 +19,7 @@ export default function NLPage() {
       <Overview />
       <WhyNL />
       <CostsAndTuition />
-      <Universities />
+      {/* <Universities /> */}
       <WorkAndChecklist />
       <FormSection />
     </main>
