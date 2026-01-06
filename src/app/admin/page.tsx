@@ -1,17 +1,17 @@
 "use client"
 
+import { useEffect } from 'react';
 
-import { useRouter } from 'next/navigation';
-import React from 'react'
-
-const page = () => {
-    const router = useRouter();
-    return router?.push('https://da22.host-ww.net:2222/evo/login');
-
+const AdminPage = () => {
+  useEffect(() => {
+    window.location.href = 'https://da22.host-ww.net:2222/evo/login';
+  }, []);
 
   return (
-    <div>page</div>
-  )
+    <div className="min-h-screen flex items-center justify-center">
+      <p>Redirecting to admin panel...</p>
+    </div>
+  );
 }
 
-export default page
+export default AdminPage

@@ -1,17 +1,17 @@
 "use client"
 
+import { useEffect } from 'react';
 
-import { useRouter } from 'next/navigation';
-import React from 'react'
-
-const page = () => {
-    const router = useRouter();
-    return router?.push('https://da22.host-ww.net/roundcube/');
-
+const InboxPage = () => {
+  useEffect(() => {
+    window.location.href = 'https://da22.host-ww.net/roundcube/';
+  }, []);
 
   return (
-    <div>page</div>
-  )
+    <div className="min-h-screen flex items-center justify-center">
+      <p>Redirecting to inbox...</p>
+    </div>
+  );
 }
 
-export default page
+export default InboxPage
