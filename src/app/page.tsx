@@ -7,6 +7,7 @@ import ContactSection from "@/components/home/ContactSection";
 import CounselingFormSection from "@/components/career-counseling/CounselingFormSection";
 import GetStartedFormSection from "@/components/forms/GetStartedFormSection";
 import ContactFormSection from "@/components/contact/ContactFormSection";
+import WhatsAppBot from "@/components/home/WhatsAppBot";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <Testimonials />
       <ContactSection />
       {/* <ContactFormSection /> */}
+
+      {/* <WhatsAppBot /> */}
     </main>
   );
 }
