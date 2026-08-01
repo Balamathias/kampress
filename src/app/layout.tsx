@@ -23,10 +23,19 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "antialiased")}
       >
-        <Navbar />
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <p>This site can't be reached due to outdated dependencies and plugins.</p>
+           <p
+              
+                className="mt-4 px-4 py-2 text-sm transition underline cursor-pointer"
+              >
+                Retry
+              </p>
+        </div>
+        {/* <Navbar />
         {children}
         <WhatsAppBot />
-        <Footer />
+        <Footer /> */}
       </body>
     </html>
   );
